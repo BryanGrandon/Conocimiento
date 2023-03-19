@@ -1,7 +1,7 @@
 function nombreDeLaFunction() {
   let nombre = "Bryan";
   let cafe = true;
-  if (cafe === true) {
+  if (cafe) {
     console.log(`${nombre} quiere un cafe`);
   } else {
     console.log(`${nombre} no quiere un cafe`);
@@ -12,7 +12,7 @@ nombreDeLaFunction();
 const functionAnonima = function () {
   let nombre = "Bryan";
   let cafe = true;
-  if (cafe === true) {
+  if (cafe) {
     console.log(`${nombre} quiere un cafe`);
   } else {
     console.log(`${nombre} no quiere un cafe`);

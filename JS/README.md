@@ -31,6 +31,9 @@
 - Break.
 - Continue.
 - Desestructuracion.
+  - Array
+  - Obj
+- Objetos literales
 - Rest.
 - Spread.
 - Arrow function.
