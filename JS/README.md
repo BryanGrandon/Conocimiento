@@ -38,4 +38,25 @@
 - Spread.
 - Arrow function.
 
+## Programacion Orientada a Ojetos
+
+- Class
+- Herencia
+- Getters & Setters
+
+## Objectos y Funciones del Lenguaje
+
+- Object Console
+- Object Date
+- Object Math
+- Operadores de cortocircuito
+- Ventana emergente
+  - Alert
+  - Comfirm
+  - Prompt
+- Expreciones Regulares
+- Funciones Anonimos Autoejecutables
+- Import
+- Export
+
 ---
