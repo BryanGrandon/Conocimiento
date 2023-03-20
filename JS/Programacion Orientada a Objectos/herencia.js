@@ -8,9 +8,10 @@ class Human {
 const human1 = new Human("Chile", "Español");
 console.log(human1); // Human {country: 'Chile', languaje: 'Español'}
 
+// Herencia
 class Personal extends Human {
   constructor(country, languaje, name, age) {
-    super(country, languaje);
+    super(country, languaje); // constructor de Human
     this.name = name;
     this.age = age;
   }
