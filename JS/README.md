@@ -60,4 +60,12 @@
   - Import
   - Export
 
+## Programacion Asincrona
+
+- Temporizadores
+- Asincronia y el event loop
+- Callbacks
+- Promesas
+- Funciones Asincronas (async/await)
+
 ---
