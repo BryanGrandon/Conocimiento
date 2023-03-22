@@ -63,9 +63,22 @@
 ## Programacion Asincrona
 
 - Temporizadores
-- Asincronia y el event loop
+- Event loop
 - Callbacks
 - Promesas
-- Funciones Asincronas (async/await)
+- Async / Await
+
+## Nuevos Tipos y caractereisticas
+
+- Symbol
+- Sets
+- Maps
+- WeakSets
+- WeakMaps
+- Iterables
+- Iterador
+- Generators
+- Proxies
+- Propiedaes Dinamicas de los Objetos
 
 ---
