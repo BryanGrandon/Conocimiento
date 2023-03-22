@@ -22,18 +22,6 @@ async function funcionAsincronaDeclarada() {
     obj = await cuadradoPromise(1);
     console.log(`Async Function: ${obj.value}, ${obj.result}`);
 
-    obj = await cuadradoPromise(2);
-    console.log(`Async Function: ${obj.value}, ${obj.result}`);
-
-    obj = await cuadradoPromise(3);
-    console.log(`Async Function: ${obj.value}, ${obj.result}`);
-
-    obj = await cuadradoPromise(4);
-    console.log(`Async Function: ${obj.value}, ${obj.result}`);
-
-    obj = await cuadradoPromise(5);
-    console.log(`Async Function: ${obj.value}, ${obj.result}`);
-
     console.log("Fin Async Function");
   } catch (err) {
     console.error(err);
