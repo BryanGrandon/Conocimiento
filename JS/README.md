@@ -73,10 +73,7 @@
 - Symbol
 - Sets
 - Maps
-- WeakSets
-- WeakMaps
-- Iterables
-- Iterador
+- Iterables y Iterador
 - Generators
 - Proxies
 - Propiedaes Dinamicas de los Objetos
