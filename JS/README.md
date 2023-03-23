@@ -78,4 +78,15 @@
 - Proxies
 - Propiedaes Dinamicas de los Objetos
 
+## This en JavaScript
+
+- This
+- Call Apply
+- call vs Apply
+- Blind
+
+## JSON
+
+## Document Object Model
+
 ---
