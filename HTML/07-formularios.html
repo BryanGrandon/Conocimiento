@@ -5,5 +5,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formularios</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Contenedor del formulario -->
+    <!-- action - Direccion url donde se enviara la informacion del formulario -->
+    <form action="url">
+      <fieldset>
+        <!-- Agrupacion visual -->
+        <legend>Texto</legend>
+        <!-- Titulo al fieldset -->
+        <input type="text" name="usuario" id="text" placeholder="text" />
+        <!-- Texto para el input -->
+        <label for="text">text</label>
+        <br />
+        <input type="email" name="correo" id="email" placeholder="email" />
+        <label for="email">email</label>
+        <br />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="password"
+        />
+        <label for="password">Password</label>
+        <br />
+        <input type="url" name="direccion" id="url" placeholder="url" />
+        <label for="url">URL</label>
+        <br />
+        <input type="tel" name="telefono" id="tel" placeholder="tel" />
+        <label for="tel">Tel</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Numeros</legend>
+        <input
+          type="number"
+          name="numero"
+          id="number"
+          value="25"
+          min="10"
+          max="50"
+          step="5"
+        />
+        <label for="number">Numeber</label>
+        <br />
+        <input
+          type="range"
+          name="rango"
+          id="range"
+          value="25"
+          min="10"
+          max="50"
+          step="5"
+        />
+        <label for="range">Range</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Fechas</legend>
+        <label for="date">Date</label>
+        <input type="date" name="fecha" id="date" />
+        <br />
+        <label for="time">Time</label>
+        <input type="time" name="tiempo" id="time" />
+        <br />
+        <label for="datetime">datetime-local</label>
+        <input type="datetime-local" name="tiempoLocal" id="datetime" />
+        <br />
+        <label for="month">Month</label>
+        <input type="month" name="mes" id="month" />
+        <br />
+        <label for="week">Week</label>
+        <input type="week" name="semana" id="week" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Seleccion</legend>
+        <label for="checkbox">Checkbox</label>
+        <input type="checkbox" name="chek" id="checkbox" />
+        <br />
+        <label for="radio">Radio</label>
+        <input type="radio" name="chekCircle" id="radio" />
+        <input type="radio" name="chekCircle" id="radio" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Opciones</legend>
+        <label for="select">Select</label>
+        <select name="seleccion" id="select">
+          <option value="opcion1">Opcion - 1</option>
+          <option value="opcion2">Opcion - 2</option>
+          <option value="opcion3">Opcion - 3</option>
+        </select>
+        <br />
+        <label for="items">Datalist</label>
+        <input type="text" list="items" />
+        <datalist id="items">
+          <option value="1">Opcion 1</option>
+          <option value="2">Opcion 2</option>
+          <option value="3">Opcion 3</option>
+        </datalist>
+      </fieldset>
+
+      <fieldset>
+        <legend>Colores</legend>
+        <label for="color">Color</label>
+        <input type="color" name="colores" id="color" />
+      </fieldset>
+      <fieldset>
+        <legend>Seleccion de archivo</legend>
+        <label for="file">File</label>
+        <input type="file" name="archivo" id="file" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Botones</legend>
+        <label>Submit</label>
+        <input type="submit" value="Enviar" />
+
+        <label>Reset</label>
+        <input type="reset" value="Restablecer" />
+
+        <label>button</label>
+        <button>Enviar</button>
+      </fieldset>
+
+      <fieldset>
+        <legend>Medidores</legend>
+        <label>progress</label>
+        <progress max="100" value="25"></progress>
+        <br />
+        <label>meter</label>
+        <meter
+          min="0"
+          max="100"
+          low="25"
+          high="75"
+          optimum="100"
+          value="75"
+        ></meter>
+      </fieldset>
+    </form>
+
+    <h2>Ejemplo</h2>
+
+    <form name="formulario" method="post" action="/send.php">
+      <fieldset>
+        <legend>Datos personales</legend>
+        <!-- Relación del texto con el campo -->
+        <label>
+          Nombre de usuario:
+          <input type="text" name="nombre" placeholder="Por ej: John Smith" />
+        </label>
+        <!-- Relación del texto con el campo -->
+        <label>
+          Edad:
+          <input
+            type="number"
+            name="edad"
+            min="18"
+            max="100"
+            placeholder="18"
+          />
+        </label>
+        Sexo:
+        <!-- Relación del texto con el primer botón -->
+        <label> <input type="radio" name="sexo" value="H" /> Hombre </label>
+        <!-- Relación del texto con el segundo botón -->
+        <label> <input type="radio" name="sexo" value="M" /> Mujer </label>
+      </fieldset>
+    </form>
+  </body>
 </html>
