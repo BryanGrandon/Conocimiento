@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Las etiquetas interactivas de HTML" />
+    <title>Etiquetas interactivas</title>
+  </head>
+  <body>
+    <h2>Detals</h2>
+    <!-- Crea un elemento desplegable -->
+    <details>
+      <!-- Título del desplegable que aparece siempre -->
+      <summary>Mas informacion</summary>
+      <h3>Nombre del sujeto</h3>
+      <p>Texto relacionado</p>
+      <img
+        src="https://cdn.pixabay.com/photo/2013/08/11/19/46/coffee-171653_960_720.jpg"
+        alt="Cafe"
+        width="300"
+      />
+    </details>
+    <h2>Dialog</h2>
+    <!-- Ventana de diálogo que puede contener y mostrar cierta información -->
+    <dialog id="ms">
+      <p>Hola, soy un mensaje</p>
+      <img
+        src="https://cdn.pixabay.com/photo/2013/08/11/19/46/coffee-171653_960_720.jpg"
+        alt="Cafe"
+        width="300"
+      />
+      <br />
+      <button id="close" onclick="document.getElementById('ms').close()">
+        OK
+      </button>
+    </dialog>
+    <button id="show" onclick="document.getElementById('ms').show()">
+      Mostrar
+    </button>
+  </body>
+</html>
