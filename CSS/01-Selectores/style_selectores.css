@@ -1,0 +1,35 @@
+/* Selectores Basicos */
+* {
+  font-family: cursive;
+}
+i {
+  font-weight: bold;
+}
+.class {
+  color: blueviolet;
+}
+#id {
+  color: #0084ff;
+}
+/* Selectores Avanzados */
+
+h3,
+h2 {
+  color: blue;
+}
+
+dt i {
+  color: #dd0f0f;
+}
+h2 + hr {
+  color: red;
+  background: red;
+  height: 1px;
+}
+h3 ~ dl {
+  border-top: 1px solid blue;
+}
+dl > dt {
+  border-bottom: 1px dashed red;
+  display: inline-block;
+}

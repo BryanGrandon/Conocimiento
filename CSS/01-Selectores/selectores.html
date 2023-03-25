@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_selectores.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h2>Selectores de CSS</h2>
+        <hr />
+        <article>
+          <h3>Selectores Basicos</h3>
+          <dl>
+            <dt>Universal <b>-></b> <i>*</i> { }</dt>
+            <dd>Se aplica a todos los elementos del documento.</dd>
+            <br />
+            <dt>De etiqueta <b>-></b> <i>etiquetas html</i></dt>
+            <dd>Se aplica a los mismos elementos de la etiqueta.</dd>
+            <br />
+            <dt>De class <b>-></b> <i class="class">.class</i> { }</dt>
+            <dd>Se aplica a los elementos que tengan la misma class</dd>
+            <br />
+            <dt>De id <b>-></b> <i id="id">#id</i> { }</dt>
+            <dd>Se aplica al unico elemento id</dd>
+          </dl>
+        </article>
+        <article>
+          <h3>Selectores Avanzados</h3>
+          <dl>
+            <dt>De agrupacion <b>-></b> <i>a</i>, <i>b</i> { }</dt>
+            <dd>Se aplica a los mismos elementos de las etiquetas.</dd>
+            <br />
+            <dt>Desendiente <b>-> a </b> <i>b</i> { }</dt>
+            <dd>Se aplica al ( b ) si esta dentro del ( a )</dd>
+            <br />
+            <dt>Adyacente <b>-> a +</b> <i>b</i> { }</dt>
+            <dd>Se aplica si ( b ) sigue directamente al ( a )</dd>
+            <br />
+            <dt>General <b>-> a ~</b> <i>b</i> { }</dt>
+            <dd>Se apica al ( b ) si tiene al mismo padre comun que ( a )</dd>
+            <br />
+            <dt>Hijo <b>-> a ></b> <i>b</i> { }</dt>
+            <dd>Se aplica al ( b ) si son hijos directos de ( a )</dd>
+          </dl>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
