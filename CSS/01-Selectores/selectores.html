@@ -4,101 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style_selectores.css" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Los diferentes tipos de selectores que se puede ocupar en CSS"
+    />
+    <title>Selectores</title>
   </head>
   <body>
     <main>
       <section>
-        <h2>Selectores de CSS</h2>
-        <hr />
+        <h2>Selectores Basicos</h2>
         <article>
-          <h3>Selectores Basicos</h3>
-          <dl>
-            <dt>Universal <b>-></b> <i>*</i> { }</dt>
-            <dd>Se aplica a todos los elementos del documento.</dd>
-            <br />
-            <dt>De etiqueta <b>-></b> <i>etiquetas html</i></dt>
-            <dd>Se aplica a los mismos elementos de la etiqueta.</dd>
-            <br />
-            <dt>De class <b>-></b> <i class="class">.class</i> { }</dt>
-            <dd>Se aplica a los elementos que tengan la misma class</dd>
-            <br />
-            <dt>De id <b>-></b> <i id="id">#id</i> { }</dt>
-            <dd>Se aplica al unico elemento id</dd>
-          </dl>
-        </article>
-        <article>
-          <h3>Selectores Avanzados</h3>
-          <dl>
-            <dt>De agrupacion <b>-></b> <i>a</i>, <i>b</i> { }</dt>
-            <dd>Se aplica a los mismos elementos de las etiquetas.</dd>
-            <br />
-            <dt>Desendiente <b>-> a </b> <i>b</i> { }</dt>
-            <dd>Se aplica al ( b ) si esta dentro del ( a )</dd>
-            <br />
-            <dt>Adyacente <b>-> a +</b> <i>b</i> { }</dt>
-            <dd>Se aplica si ( b ) sigue directamente al ( a )</dd>
-            <br />
-            <dt>General <b>-> a ~</b> <i>b</i> { }</dt>
-            <dd>Se apica al ( b ) si tiene al mismo padre comun que ( a )</dd>
-            <br />
-            <dt>Hijo <b>-> a ></b> <i>b</i> { }</dt>
-            <dd>Se aplica al ( b ) si son hijos directos de ( a )</dd>
-          </dl>
-        </article>
-        <article>
-          <h3>:Pseudoclases</h3>
-          <dl>
-            <dt>:link <b>-></b> <a class="link" href="#">link</a></dt>
-            <dd>Aplica estilos cuando el enlace no ha sido visitado</dd>
-            <br />
-            <dt>
-              :visited <b>-></b>
-              <a class="visited" target="_blank" href="https://www.google.com/">
-                Google
-              </a>
-            </dt>
-            <dd>Aplica estilos cuando el enlace ha sido visitado</dd>
-            <br />
-            <dt>:hover <b>-></b> <span class="hover bloque">hover</span></dt>
-            <dd>Aplica estilos cuando pasamos el cursor sobre un elemento</dd>
-            <br />
-            <dt>:active <b>-></b> <span class="active bloque">active</span></dt>
-            <dd>Aplica estilos cuando pulsamos sobre el elemento</dd>
-          </dl>
-        </article>
-        <article>
-          <h3>:Pseudoelemento</h3>
-          <dl>
-            <dt>content <b>-></b> <i>content: "";</i></dt>
-            <dd>Propiedad para generar contenido a ::before o ::after</dd>
-            <br />
-            <dt>::before <b>-></b> <span class="before">actual</span></dt>
-            <dd>Aplica los estilos antes del elemento indicado</dd>
-            <br />
-            <dt>::after <b>-></b> <span class="after">actual</span></dt>
-            <dd>Aplica los estilos despues del elemento indicado</dd>
-            <br />
-            <dt>
-              ::first-letter <b>-></b>
-              <p class="letter">First letter</p>
-            </dt>
-            <dd>Aplica los estilos en la primera letra del texto</dd>
-            <br />
-            <dt>
-              ::first-line <b>-></b>
-              <p class="line">first line</p>
-            </dt>
-            <dd>Aplica los estilos en la primera linea del texto</dd>
-            <br />
-            <dt>
-              ::selection <b>-></b>
-              <p class="selection">seleccionar</p>
-            </dt>
-            <dd>
-              Aplica estilos al fragmento de texto seleccionado por el usuario
-            </dd>
-          </dl>
+          <p>Etiqueta p con una <b>Etiqueta b</b></p>
+          <p>
+            Etiqueta p con una
+            <span class="class">Etiqueta span con una class</span>
+          </p>
+          <p>Etiqueta p con una <span id="id">Etiqueta span son un id</span></p>
+          <ol>
+            <li>Etiqueta li dentro del ol</li>
+          </ol>
+          <ul>
+            <li>Etiqueta li centro del ul</li>
+          </ul>
+          <p>Etiqueta p con una <i>Etiqueta i</i></p>
+
+          <p>Etiqueta p</p>
+          <pre>Etiqueta pre</pre>
+
+          <p>Etiqueta p con una <strong>Etiquetas strong</strong></p>
+
+          <p>
+            Etiqueta p con una <b>Etiqueta b</b> y una
+            <strong>Etiqueta strong</strong>
+          </p>
         </article>
       </section>
     </main>

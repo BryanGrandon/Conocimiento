@@ -1,93 +1,47 @@
-/* Selectores Basicos */
+/* Universal. Selecciona todos los elementos del HTML */
 * {
   font-family: cursive;
 }
-i {
-  font-weight: bold;
+
+/* Elemento. Selecciona elementos HTML en funcion del nombre */
+b {
+  color: red;
 }
+
+/* Clases. Selecciona los elementos del HTML que tengan el atributo class="" */
 .class {
-  color: blueviolet;
+  color: #6f00ff;
 }
+
+/* Id. Selecciona un unico elemento HTML */
 #id {
   color: #0084ff;
 }
-/* Selectores Avanzados */
 
-h3,
-h2 {
+/* Agrupacion. Para decignar un estilo a diferentes elementos*/
+ol::first-letter,
+ul::first-letter {
+  color: red;
+}
+
+/* Decendiente. Selecciona el elemento si esta dentro del otro */
+p i {
+  color: #13ce13;
+}
+
+/* Adyacente. Selecciona el elemento si sigue directamente al otro */
+p + pre {
+  border: 1px dashed #000;
+}
+
+/* General. Selecciona el elemento si tiene al mismo padre que el otro */
+b ~ strong {
   color: blue;
 }
 
-dt i {
-  color: #dd0f0f;
-}
-h2 + hr {
-  color: red;
-  background: red;
-  height: 1px;
-}
-h3 ~ dl {
-  border-right: 2px solid blue;
-}
-dl > dt {
-  border-bottom: 1px dashed blue;
-  display: inline-block;
-}
-
-/* Pseudoclase */
-
-.link:link {
-  color: #10bd10;
-}
-.visited:visited {
-  color: #cc0fdd;
-}
-
-.bloque {
-  display: inline-block;
-  border: 1px solid #000;
-  padding: 0 5px;
-  cursor: pointer;
-}
-
-.hover:hover {
-  background: #000;
-  color: red;
-}
-.active:active {
-  background: #000;
-  color: greenyellow;
-}
-
-/* Pseudoelemento */
-
-.before::before {
-  content: "before ";
-  color: #2d99e0;
-  border: 1px dashed #000;
-}
-.after::after {
-  content: " after";
-  color: #2d99e0;
-  border: 1px dashed #000;
-}
-
-.letter,
-.line,
-.selection {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-}
-
-.letter::first-letter {
-  color: red;
-  border: 1px dashed #000;
-}
-.line::first-line {
-  color: red;
-}
-.selection::selection {
-  color: red;
-  background: #000;
+/* Hijo. Selecciona el elemento si es hijo directo del otro elemento */
+section > article {
+  border: 1px dashed red;
+  /* margin: 10px; */
+  padding: 0 20px;
 }
