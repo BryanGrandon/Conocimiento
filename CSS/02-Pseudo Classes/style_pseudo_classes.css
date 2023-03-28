@@ -1,0 +1,40 @@
+* {
+  font-family: cursive;
+}
+
+main {
+  font-size: 18px;
+}
+
+.enlace {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* :link. Aplica estilos al enlace no visitado */
+.link:link {
+  color: #0fc50f;
+}
+
+/* :visited. Aplica estilos al enlace visitado */
+.visited:visited {
+  color: #d13f12;
+}
+
+/* :hover. Aplica estilos al pasar sobre el elmento */
+.hover:hover {
+  border: 1px dashed #000;
+  color: #ff00b3;
+}
+
+/* :active. Aplica estilos al pulsar el elmeneto */
+.active:active {
+  border: 1px solid #000;
+  color: #10a4c9;
+}
+
+/* :focus. Aplica estilos al elemento cuando recibe el foco. */
+.user:focus {
+  background: #ccc;
+  color: blueviolet;
+}
