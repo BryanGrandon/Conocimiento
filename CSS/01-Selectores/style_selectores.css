@@ -13,7 +13,7 @@ b {
   color: #6f00ff;
 }
 
-/* Id. Selecciona un unico elemento HTML */
+/* Id. Selecciona un unico elemento HTML que tenga el atributo id="" */
 #id {
   color: #0084ff;
 }
