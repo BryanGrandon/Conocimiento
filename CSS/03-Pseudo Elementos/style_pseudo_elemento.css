@@ -1,0 +1,36 @@
+* {
+  font-family: cursive;
+}
+
+/* ::first-letter. Aplica estilos a la primera letra del texto */
+.first-letter::first-letter {
+  color: red;
+  font-weight: 700;
+  font-size: 20px;
+  border: 1px dashed #000;
+}
+
+/* ::first-line. Aplicar estilos en la primera linea del texto */
+.first-line::first-line {
+  color: blueviolet;
+}
+
+/* ::selection. Aplica estilos al texto seleccionado por el usuario */
+.selection::selection {
+  color: blueviolet;
+  background: #eee;
+}
+
+/* ::before. Aplica estilos antes del elemento indicado */
+.before::before {
+  content: "Before";
+  color: #09d8ab;
+  border: 1px dashed #000;
+}
+
+/* ::after. Apica estilos despues del elemento indicado */
+.after::after {
+  content: "After";
+  color: #09d8ab;
+  border: 1px dashed #000;
+}
