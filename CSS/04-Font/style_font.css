@@ -1,0 +1,61 @@
+* {
+  font-family: cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+article > article {
+  border: 1px dashed #000;
+  padding: 10px;
+  margin: 5px;
+}
+h4 {
+  font-weight: 500;
+  color: #1771d8;
+  font-variant: small-caps;
+}
+
+/* color. Establecer un color al texto */
+.c-blueviolet {
+  color: blueviolet;
+}
+
+/* font-family. Tipo de fuente*/
+.ff-time-new-roman {
+  font-family: "Times New Roman", Times, serif;
+}
+.ff-arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* font-variant. Tipo de letra */
+.fv-normal {
+  font-variant: normal;
+}
+.fv-small-caps {
+  font-variant: small-caps;
+}
+
+/* font-size. Tamaño de las letras */
+.fs-18 {
+  font-size: 18px;
+}
+.fs-1em {
+  font-size: 1em;
+}
+
+/* font-weight. Grosor de la letra */
+.fw-400 {
+  font-weight: 400;
+}
+.fw-700 {
+  font-weight: 700;
+}
+
+/* font-style. Estilo de la letra */
+.fst-normal {
+  font-style: normal;
+}
+.fst-italic {
+  font-style: italic;
+}
