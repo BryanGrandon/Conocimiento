@@ -4,6 +4,8 @@ CSS (Cascading Style Sheets) Hojas de estilo en cascada, lo que nos permite agre
 
 ## Valores y Unidades
 
+---
+
 ### Keywords
 
 - none: "ninguno"
@@ -25,4 +27,25 @@ CSS (Cascading Style Sheets) Hojas de estilo en cascada, lo que nos permite agre
     <dt>Flexibles</dt>
     <dd>Medidas relativas al tamaño del viewport</dd>
     <dd>vw, vmin, vmax, </dd>
+</dl>
+
+## Posicionamiento
+
+---
+
+<dl>
+    <dt>static</dt>
+    <dd>Posicionamiento estatico. Utiliza ek orden natural de los elementos HTML</dd>
+    <br />
+    <dt>relative</dt>
+    <dd>Posicionamiento relativo. Los elementos se mueven ligeramente en base a su posicion estatica</dd>
+    <br />
+    <dt>absolute</dt>
+    <dd>Posicionamiento absoluto. Los elementos se colocan en base al contenedor padre</dd>
+    <br />
+    <dt>fixed</dt>
+    <dd>Posicionamiento fijo. Item al absoluto, pero aunque hagamos scroll no se mueve</dd>
+    <br />
+    <dt>sticky</dt>
+    <dd>Posicionamiento "pegado". Similar al relativo, usado para pegar menus a la parte superior</dd>
 </dl>
