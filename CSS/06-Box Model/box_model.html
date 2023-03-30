@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Los componenetes del box model de CSS" />
+    <link rel="stylesheet" href="style_box_model.css" />
+    <title>Box Model</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <article>
+          <h3>Margenes</h3>
+          <article>
+            <h4>Padding</h4>
+            <p class="padding">Interno</p>
+          </article>
+          <article>
+            <h4>Margin</h4>
+            <p class="margin">Externo</p>
+          </article>
+        </article>
+        <article>
+          <h3>Contenido</h3>
+          <article>
+            <h4>Width</h4>
+            <p class="width"></p>
+          </article>
+          <article>
+            <h4>Height</h4>
+            <p class="height"></p>
+          </article>
+        </article>
+        <article>
+          <h3>Border</h3>
+          <article class="espacio">
+            <h4>border: width style color;</h4>
+            <p class="border-solid">style solid</p>
+            <p class="border-double">style double</p>
+            <p class="border-dashed">style dashed</p>
+            <p class="border-dotted">style dotted</p>
+            <p class="border-groove">style groove</p>
+            <p class="border-ridge">style ridge</p>
+            <p class="border-inset">style inset</p>
+            <p class="border-outset">style outset</p>
+          </article>
+        </article>
+        <article>
+          <h3>box-sizing</h3>
+          <article class="espacio">
+            <p class="border-box">border-box</p>
+            <hr />
+            <p class="content-box">content-box</p>
+          </article>
+        </article>
+        <article class="espacio">
+          <h3>border-radius</h3>
+          <article>
+            <p class="border-radius-1">top-left 10px, top-right 20px</p>
+            <p class="border-radius-2">bottom-left 10px, bottom-right 20px</p>
+            <p class="border-radius-3">
+              1 Parametro (top(left, right)bottom(left, right))
+            </p>
+            <p class="border-radius-4">
+              2 Parametro ((top-left, bottom-right)(top-right, bottom-left))
+            </p>
+          </article>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
