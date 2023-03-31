@@ -1,0 +1,53 @@
+/* Absolutas. Medidas que no cambian, sin importar el tamaño del proyecto */
+
+/* inches (pulgadas)*/
+.medida-in {
+  width: 1in;
+}
+/* centimetros */
+.medida-cm {
+  width: 1cm;
+}
+/* Milimetros */
+.medida-mm {
+  width: 50mm;
+}
+/* picas */
+.medida-pc {
+  width: 10pc;
+}
+/* points */
+.medida-pt {
+  width: 100pt;
+}
+/* Pixels */
+.medida-px {
+  width: 100px;
+}
+
+/* Relativas. Medidas que cambian, por ciertos valores establecidos */
+
+/* em. Relativo al font-size del elemento*/
+.medida-em {
+  width: 2em;
+}
+/* rem. Relativo al font-size del elemento raiz */
+.medida-rem {
+  width: 3rem;
+}
+/* vw. Relativo al 1% del ancho de la ventana grafica */
+.medida-vw {
+  width: 50vw;
+}
+/* vmin. Relativo con el 1% de la dimencion mas pequeña de la ventana grafica */
+.medida-vmin {
+  width: 20vmin;
+}
+/* vmax. Relativo con el 1% de la dimencion mas grande de la ventana grafica */
+.medida-vmax {
+  width: 70vmax;
+}
+/* %. Relativo al elemento padre */
+.medida-por {
+  width: 30%;
+}
