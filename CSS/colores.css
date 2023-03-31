@@ -1,0 +1,39 @@
+/* color. Establece un color al texto */
+.color {
+  color: red;
+}
+/* Palabras claves */
+.color-blueviolet {
+  color: blueviolet;
+}
+.color-green {
+  color: green;
+}
+/* RGB (red, green, blue)*/
+.color-rgb {
+  color: rgb(0, 255, 255);
+}
+/* Hexadecimal */
+.color-hexadecimal {
+  color: #e90bcb;
+}
+/* HSL (hue, saturation, lightness) */
+.color-hsl {
+  color: hsl(64, 100%, 50%);
+}
+
+/* Alpha. Establece un porcentaje (0 - 1, 0% - 100%) de transparencia parcial */
+
+/* RGBA */
+.color-rgba {
+  color: rgba(0, 255, 255, 50%);
+}
+/* Hexadecimal */
+.color-hexadecimal-a {
+  color: #e90bcb80;
+}
+
+/* HSLA */
+.color-hsla {
+  color: hsla(64, 100%, 50%, 0.5);
+}
