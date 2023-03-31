@@ -49,3 +49,12 @@ CSS (Cascading Style Sheets) Hojas de estilo en cascada, lo que nos permite agre
     <dt>sticky</dt>
     <dd>Posicionamiento "pegado". Similar al relativo, usado para pegar menus a la parte superior</dd>
 </dl>
+
+## Colores
+
+- ### Palabras claves
+- ### RGB (rojo, green, blue)
+- ### Hexadecimal
+- ### HLS
+
+- ### Alpha

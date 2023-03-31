@@ -1,16 +1,3 @@
-* {
-  font-family: cursive;
-}
-
-main {
-  font-size: 18px;
-}
-
-.enlace {
-  display: inline-block;
-  text-decoration: none;
-}
-
 /* :link. Aplica estilos al enlace no visitado */
 .link:link {
   color: #0fc50f;

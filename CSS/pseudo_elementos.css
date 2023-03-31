@@ -1,12 +1,6 @@
-* {
-  font-family: cursive;
-}
-
 /* ::first-letter. Aplica estilos a la primera letra del texto */
 .first-letter::first-letter {
   color: red;
-  font-weight: 700;
-  font-size: 20px;
   border: 1px dashed #000;
 }
 
