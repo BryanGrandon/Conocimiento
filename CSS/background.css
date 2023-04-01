@@ -1,0 +1,49 @@
+/* background-color. Color de fondo */
+.bg-color {
+  background-color: #ccc;
+}
+/* background-image: url('');. Imagen de fondo*/
+.bg-image {
+  background-image: url("https://images.pexels.com/photos/1907071/pexels-photo-1907071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+/* background-repeat. Repeticion de la imagen de fondo */
+.bg-repeat {
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-repeat: repeat;
+  background-repeat: no-repeat;
+}
+/* background-position. Posicion de la imagen de fondo */
+.bg-position {
+  background-position-x: left;
+  background-position-x: center;
+  background-position-x: right;
+
+  background-position-y: top;
+  background-position-y: center;
+  background-position-y: bottom;
+
+  background-position: top right;
+}
+/* background-attachment. Comportamiento de la imagen de fondo */
+.bg-attachment {
+  background-attachment: fixed;
+  background-attachment: scroll;
+}
+/* background-clip. Releno de la imagen de fondo */
+.bg-clip {
+  background-clip: border-box;
+  background-clip: content-box;
+  background-clip: padding-box;
+}
+/* background-size. Establecer un tamaño diferente a la imagen de fondo */
+.bg-size {
+  background-size: auto;
+  background-size: contain;
+  background-size: cover;
+}
+/* opacity. Establece la transparencia del elemento */
+.opacity {
+  opacity: 50%;
+  opacity: 0.5;
+}
