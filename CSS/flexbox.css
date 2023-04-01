@@ -1,0 +1,62 @@
+/* display: flex; */
+
+/* flex-direction. Direccion de los items dentro del elemento */
+.flex-direction {
+  display: flex;
+  /* fila */
+  flex-direction: row;
+  /* fila invertida */
+  flex-direction: row-reverse;
+  /* columna */
+  flex-direction: column;
+  /* columna invertida */
+  flex-direction: column-reverse;
+}
+/* flex-wrap. Salto de linea de los items */
+.flex-wrap {
+  display: flex;
+  /* sin salto de linea */
+  flex-wrap: nowrap;
+  /* salto de linea */
+  flex-wrap: wrap;
+  /* salto de linea invertido */
+  flex-wrap: wrap-reverse;
+}
+/* justify-content. Forma de distribuir los items dentro del elemento (eje x) */
+.justify-content {
+  display: flex;
+  /* inicio (left) */
+  justify-content: flex-start;
+  /* centro */
+  justify-content: center;
+  /* final (right) */
+  justify-content: flex-end;
+  /* distribucion uniforme del espacio entre cajas */
+  justify-content: space-between;
+  /* distribucion uniformenete el espacio alrededor de las cajas */
+  justify-content: space-around;
+  /* Distribucion con espacios iguales */
+  justify-content: space-evenly;
+}
+/* align-items. Forma de distribuir los items dentro del elemento (eje y) */
+.align-items {
+  display: flex;
+  /* borde superior */
+  align-items: flex-start;
+  /* centro */
+  align-items: center;
+  /* borde inferior */
+  align-items: flex-end;
+  /* Estira los elementos para llenar el contenedor */
+  align-items: stretch;
+}
+/* gap. Establecer un espacio entre los items */
+.gap {
+  display: flex;
+  /* Para ambos lados */
+  gap: 20px;
+  /* espacio entre las filas */
+  row-gap: 10px;
+  /* espacio entre las comunas */
+  column-gap: 10px;
+}
