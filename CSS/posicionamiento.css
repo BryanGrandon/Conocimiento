@@ -1,0 +1,25 @@
+/* Posicionamiento Estatico. utiliza el orden natural de los elementos HTML */
+.static {
+  position: static;
+}
+/* Posicionamiento Relativo. los elementos se mueven ligeramente en base a su posicion estatica*/
+.relative {
+  position: relative;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+}
+/* Posicionamiento Absoluto. los elementos se colocan en base al contenedor padre */
+.absolute {
+  position: absolute;
+}
+/* Posicionamiento Fijo. item al absoluto, pero aunque hagamos scroll no se mueve */
+.fixed {
+  position: fixed;
+}
+/* Posicionamiento Pegado. similar al relativo, usado para pegar menus a la parte superior */
+.sticky {
+  position: static;
+  top: 0;
+}
