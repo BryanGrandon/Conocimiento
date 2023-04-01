@@ -42,6 +42,10 @@
   background-size: contain;
   background-size: cover;
 }
+/* background. Abreviacion de los background */
+.bg {
+  background: url("") scroll left top content-box #eee;
+}
 /* opacity. Establece la transparencia del elemento */
 .opacity {
   opacity: 50%;
