@@ -19,8 +19,8 @@ b {
 }
 
 /* Agrupacion. Para decignar un estilo a diferentes elementos*/
-ol::first-letter,
-ul::first-letter {
+ol,
+ul {
   color: red;
 }
 
@@ -42,6 +42,5 @@ b ~ strong {
 /* Hijo. Selecciona el elemento si es hijo directo del otro elemento */
 section > article {
   border: 1px dashed red;
-  /* margin: 10px; */
   padding: 0 20px;
 }
