@@ -1,0 +1,33 @@
+/* display. controlar estructuras de los elementos */
+
+/* block. Utiliza todo el espacio disponible y permite modificar su contenedor */
+span,
+a,
+img {
+  display: block;
+  width: 60%;
+  height: 300px;
+}
+/* inline. Utiliza el espacio necesario del contenido */
+h1,
+h6,
+p,
+div,
+form,
+header,
+footer,
+section,
+article {
+  display: inline;
+}
+/* inline-block. Se comporta como el inline pero con la funcion del block*/
+b {
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+}
+/* none. Para oculta elemento sin eliminarlos */
+.none {
+  display: none;
+}
+/* flex y grig. Para mequetar el contenido del sitio wed */
