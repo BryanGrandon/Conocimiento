@@ -1,0 +1,14 @@
+/* :root. Para que la variable sea global */
+:root {
+  --color-principal: #8400ff;
+  --altura-nav: 50px;
+}
+
+/* var(). se escribe el nombre de la variable */
+h1 {
+  color: var(--color-principal);
+}
+
+nav {
+  height: var(--altura-nav);
+}
