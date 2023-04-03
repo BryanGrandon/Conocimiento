@@ -1,3 +1,4 @@
+console.log(`****** Elementos del Document ***** \n `);
 // Capturar todo el documento
 console.log(window.document);
 console.log(document);

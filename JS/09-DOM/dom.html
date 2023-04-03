@@ -9,10 +9,16 @@
   <body>
     <header>
       <h1>DOM : Document Object Model</h1>
+      <nav id="nav">
+        <ul>
+          <li><a href="#">Elementos del documento</a></li>
+          <li><a href="#">Nodos, Elementos y Selectores</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section>
-        <article>
+        <article class="articulo">
           <h3>Elementos del documento</h3>
           <section>
             <h4>Capturar el documento</h4>
@@ -58,11 +64,32 @@
           </section>
         </article>
 
-        <article>
+        <article class="articulo">
           <h3>Nodos, Elementos y Selectores</h3>
+          <section>
+            <h4>Nodos</h4>
+            <p>
+              Cada nodo reprecenta un aparte del documento, como un elemento
+              HTML
+            </p>
+          </section>
+          <section>
+            <h4>Elementos</h4>
+            <ul>
+              <li>document.getElementById("")</li>
+            </ul>
+          </section>
+          <section>
+            <h4>Selectores</h4>
+            <ul>
+              <li>document.querySelector("")</li>
+              <li>document.querySelectorAll("")</li>
+            </ul>
+          </section>
         </article>
       </section>
     </main>
     <script src="01-elementos_del_documento.js"></script>
+    <script src="02-nodos_elementos_selectores.js"></script>
   </body>
 </html>

@@ -1,25 +1,29 @@
-// Captura el elemento que tenga el id
-console.log(document.getElementById("menu"));
+console.log(` \n ***** Nodos, Elementos y Selectores ***** \n `);
+// Nodos
+// Cada nodo reprecenta una parte de documento, como un elemento HTML
 
-// Captura el primer elemento que se encuentre
+// Elementos
+console.log(document.getElementById("nav"));
+
+// Selectores
 // Valores a ingresar tienen que ser selectores validos de css
-console.log(document.querySelector());
 // id # (mejor usar getElementById)
-console.log(document.querySelector("#menu"));
+console.log(document.querySelector("#nav"));
 // class .
 console.log(document.querySelector(".articulo"));
 // etiqueta
 console.log(document.querySelector("article"));
-// Seleccionar todos los elementos que que esten en el documento
-console.log(console.log(document.querySelectorAll()));
 // class .
 console.log(document.querySelectorAll(".articulo"));
 // etiqueta
 console.log(document.querySelectorAll("article"));
 
 // metodos y propiedad que se pueden utilizar
+// length
 console.log(document.querySelectorAll("a").length);
-console.log(document.querySelectorAll("articulo")[2]);
+// []
+console.log(document.querySelectorAll("articulo")[1]);
+// forEach
 document.querySelectorAll("a").forEach((e) => {
   console.log(e);
 });
