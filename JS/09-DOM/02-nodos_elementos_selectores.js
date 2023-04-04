@@ -1,4 +1,4 @@
-console.log(` \n ***** Nodos, Elementos y Selectores ***** \n `);
+console.log(`***** Nodos, Elementos y Selectores ***** \n `);
 // Nodos
 // Cada nodo reprecenta una parte de documento, como un elemento HTML
 
