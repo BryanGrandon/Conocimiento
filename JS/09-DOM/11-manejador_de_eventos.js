@@ -48,9 +48,11 @@ $eventoMultiple.addEventListener("click", () => {
 <button id="evento-remover">Remover</button> */
 
 const $eventoRemover = document.getElementById("evento-remover");
+
 const removerDobleClick = (e) => {
   alert(`Removiendo el evento de tipo ${e.type}`);
   console.log(e);
   $eventoRemover.removeEventListener("dblclick", removerDobleClick);
 };
-$eventoRemover.addEventListener("dblclick");
+
+$eventoRemover.addEventListener("dblclick", removerDobleClick);
