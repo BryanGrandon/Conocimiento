@@ -1,0 +1,15 @@
+:root {
+  --blueviolet-color: blueviolet;
+  --text-color: blue;
+}
+
+.estilos {
+  color: var(--text-color);
+  background: #000;
+}
+
+.section {
+  height: 100px;
+  background-color: var(--text-color);
+  border: 1px solid #000;
+}
