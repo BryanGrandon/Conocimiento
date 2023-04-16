@@ -1,14 +1,3 @@
-/* HTML
- <section class="cards">
-  <template id="template-card">
-    <figure class="card">
-      <img />
-      <figcaption></figcaption>
-    </figure>
-  </template>
- </section>
-*/
-
 const $cards = document.querySelector(".cards"),
   $template = document.getElementById("template-card").content,
   $fragment = document.createDocumentFragment(),
@@ -35,10 +24,10 @@ const $cards = document.querySelector(".cards"),
     },
   ];
 
-cardsContent.forEach((el) => {
-  $template.querySelector("img").setAttribute("src", el.img);
-  $template.querySelector("img").setAttribute("alt", el.title);
-  $template.querySelector("figcaption").textContent = el.title;
+cardsContent.forEach((e) => {
+  $template.querySelector("img").setAttribute("src", e.img);
+  $template.querySelector("img").setAttribute("alt", e.title);
+  $template.querySelector("figcaption").textContent = e.title;
 
   let $clone = document.importNode($template, true);
   $fragment.appendChild($clone);
