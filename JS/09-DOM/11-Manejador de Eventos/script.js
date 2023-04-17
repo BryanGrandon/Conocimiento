@@ -1,51 +1,43 @@
-/* Eventos:
-    Los eventos son los mecanismos que tenemos en JavaScript para controlar las acciones del usuario
-    y definir el comportamiento del documento en cierto momento o cuando se cumplan ciertas condiciones.
-
-Las funciones que se ejecutan en un evento se llaman Event Handler (Manejador de Eventos). */
-
-/* Evento con atributo HTML 
-<button onclick="holaMundo()">Atributo</button> */
+// Evento con atributo
 
 function holaMundo() {
   alert("Hola Mundo");
 }
 
-/*  Evento con manejador semantico
-<button id="evento-semantico">Semantico</button> */
+// Evento con manejador semantico
 
 const $eventoSemantico = document.getElementById("evento-semantico");
+// Designarle una funcion
 $eventoSemantico.onclick = holaMundo;
+// Establecer una arrow function
 $eventoSemantico.onclick = (e) => {
-  alert("Hola Mundo Manejador de Eventos Semanticos");
+  alert("Hola Mundo, Manejador Sementico");
   console.log(e);
 };
 
-/* Evento Multiple
-<button id="enevto-multiple">Multiple</button> */
+// Evento Multiple
 
 const $eventoMultiple = document.getElementById("evento-multiple");
 $eventoMultiple.addEventListener("click", holaMundo);
 $eventoMultiple.addEventListener("click", (e) => {
-  alert("Hola Mundo Manejador de Evento Multiple");
+  alert("Hola Mundo, Manejo de evento Multiple");
   console.log(e);
   console.log(e.type);
   console.log(e.target);
 });
 
-/* Evento con parametros */
-
+// Evento con parametros
 function saludar(nombre = `Desconocid@`) {
   alert(`Hola ${nombre}`);
 }
 
+// Designar una funcion dentro de otra funcion
 $eventoMultiple.addEventListener("click", () => {
   saludar();
   saludar("Bryan");
 });
 
-/* Eliminar eventos 
-<button id="evento-remover">Remover</button> */
+// Eliminar evento
 
 const $eventoRemover = document.getElementById("evento-remover");
 

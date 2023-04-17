@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manejador de Eventos</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="info">
+        <p>
+          Los eventos son los mecanismos que tenemos en JavaScript para
+          controlar las acciones del usuario y definir el comportamiento del
+          documento en cierto momento o cuando se cumpla ciertas condiciones.
+        </p>
+        <p>
+          las funciones que se ejecutan en un evento se llaman Event Handler
+          (manejo de eventos).
+        </p>
+      </section>
+      <section class="eventos">
+        <article class="evento">
+          <h3>Evento con atributo</h3>
+          <button onclick="holaMundo()">Atributo</button>
+        </article>
+
+        <article class="evento">
+          <h3>Evento con manejador semantico</h3>
+          <button id="evento-semantico">Semantico</button>
+        </article>
+
+        <article class="evento">
+          <h3>Evento Multiple</h3>
+          <button id="evento-multiple">Multiple</button>
+        </article>
+
+        <article class="evento">
+          <h3>Remover evento</h3>
+          <button id="evento-remover">Remover</button>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
