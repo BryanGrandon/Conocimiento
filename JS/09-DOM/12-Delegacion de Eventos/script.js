@@ -1,6 +1,3 @@
-/*  Designamos el evento al documento HTML, y con condicionales 
-le asignamos los elementos con su respectiva programacion */
-
 function flujoEventos(e) {
   console.log(
     `Hola te saluda ${this} el click lo origino ${e.target.className}`
@@ -8,10 +5,11 @@ function flujoEventos(e) {
 }
 
 document.addEventListener("click", (e) => {
-  if (e.target.maches(".eventos-flujos div")) {
+  if (e.target.matches(".eventos-flujo div")) {
     flujoEventos(e);
+    console.log("f");
   }
-  if (e.target.maches(".eventos-flujo a")) {
+  if (e.target.matches(".eventos-flujo a")) {
     alert("Dirigir a otra pagina");
     e.preventDefault();
   }
