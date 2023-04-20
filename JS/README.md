@@ -103,5 +103,9 @@
 - Modificando Elementos
 - Manejador de Eventos
 - Delegacion de Eventos
+- BOM
+  - Propiedades y Eventos
+  - Metodos
+  - URL, Historial y Navegador
 
 ---
