@@ -103,3 +103,29 @@ img {
   color: var(--second-color);
   background-color: var(--main-modal-color);
 }
+
+/* ********** Reloj Alarm ********** */
+
+#reloj {
+  font-family: cursive;
+  font-size: 25px;
+}
+.btns-reloj {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px 10px;
+}
+.btns-reloj button {
+  border: 1px solid var(--second-color);
+  padding: 5px 10px;
+  width: 240px;
+  font-size: var(--font-size);
+  font-family: cursive;
+  border-radius: 5px;
+}
+.btns-reloj button:hover {
+  color: var(--main-color);
+  background-color: var(--second-modal-color);
+}
