@@ -80,6 +80,8 @@ img {
   justify-content: center;
   align-items: center;
   background-color: var(--main-color);
+  border-radius: 50%;
+  color: var(--second-color);
 }
 .menu {
   width: inherit;
