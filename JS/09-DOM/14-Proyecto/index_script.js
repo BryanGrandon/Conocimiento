@@ -17,11 +17,12 @@ d.addEventListener("DOMContentLoaded", (e) => {
   countdown("countdown", "December 19, 2023", "Feliz Cumpleaños Bryan Grandon");
   // Scroll top
   scrollTopButtton(".scroll-top-btn");
-  // Theme dark
-  darkTheme(".dark-theme-btn", "dark-mode");
 });
 
 d.addEventListener("keydown", (e) => {
   shortcuts(e);
   moveBall(e, ".ball", ".stage");
 });
+
+// Theme dark
+darkTheme(".dark-theme-btn", "dark-mode");
