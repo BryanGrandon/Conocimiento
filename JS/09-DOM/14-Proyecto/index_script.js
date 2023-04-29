@@ -1,6 +1,7 @@
 import scrollTopButtton from "./Scripts/boton_scroll.js";
 import countdown from "./Scripts/cuenta_regresiva.js";
 import darkTheme from "./Scripts/dark_theme.js";
+import userDeviceInfo from "./Scripts/deteccion_dispositivos.js";
 import hamburgerMenu from "./Scripts/hamburger_menu.js";
 import responsiveMedia from "./Scripts/objeto_responsive.js";
 import responsiveTester from "./Scripts/prueba_responsive.js";
@@ -34,6 +35,8 @@ d.addEventListener("DOMContentLoaded", (e) => {
   );
   // Prueba Responsive
   responsiveTester("responsive-tester");
+  // Deteccion de dispositivos
+  userDeviceInfo("user-device");
 });
 
 d.addEventListener("keydown", (e) => {
