@@ -3,6 +3,7 @@ import countdown from "./Scripts/cuenta_regresiva.js";
 import darkTheme from "./Scripts/dark_theme.js";
 import userDeviceInfo from "./Scripts/deteccion_dispositivos.js";
 import networkStatus from "./Scripts/deteccion_red.js";
+import wedCam from "./Scripts/deteccion_wedcam.js";
 import hamburgerMenu from "./Scripts/hamburger_menu.js";
 import responsiveMedia from "./Scripts/objeto_responsive.js";
 import responsiveTester from "./Scripts/prueba_responsive.js";
@@ -44,6 +45,9 @@ d.addEventListener("DOMContentLoaded", (e) => {
 
   // Deteccion de dispositivos
   userDeviceInfo("user-device");
+
+  // Wed Cam
+  wedCam("wedcam");
 });
 
 d.addEventListener("keydown", (e) => {
