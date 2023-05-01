@@ -10,6 +10,7 @@ import hamburgerMenu from "./Scripts/hamburger_menu.js";
 import responsiveMedia from "./Scripts/objeto_responsive.js";
 import responsiveTester from "./Scripts/prueba_responsive.js";
 import { alarm, digitalClock } from "./Scripts/reloj_alarm.js";
+import draw from "./Scripts/sorteo.js";
 import { moveBall, shortcuts } from "./Scripts/teclado.js";
 
 const d = document;
@@ -56,6 +57,9 @@ d.addEventListener("DOMContentLoaded", (e) => {
 
   // Busqueda de elementos
   searchFilter(".card-filter", ".card");
+
+  // Sorteo
+  draw("#winner-btn", ".player");
 });
 
 d.addEventListener("keydown", (e) => {
