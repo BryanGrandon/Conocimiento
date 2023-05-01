@@ -4,6 +4,7 @@ import darkTheme from "./Scripts/dark_theme.js";
 import userDeviceInfo from "./Scripts/deteccion_dispositivos.js";
 import networkStatus from "./Scripts/deteccion_red.js";
 import wedCam from "./Scripts/deteccion_wedcam.js";
+import searchFilter from "./Scripts/filtro_busquedas.js";
 import getGeolocation from "./Scripts/geolocalizacion.js";
 import hamburgerMenu from "./Scripts/hamburger_menu.js";
 import responsiveMedia from "./Scripts/objeto_responsive.js";
@@ -52,6 +53,9 @@ d.addEventListener("DOMContentLoaded", (e) => {
 
   // Geolocation
   getGeolocation("geolocation");
+
+  // Busqueda de elementos
+  searchFilter(".card-filter", ".card");
 });
 
 d.addEventListener("keydown", (e) => {
