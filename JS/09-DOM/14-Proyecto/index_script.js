@@ -1,4 +1,5 @@
 import scrollTopButtton from "./Scripts/boton_scroll.js";
+import slider from "./Scripts/carrusel.js";
 import countdown from "./Scripts/cuenta_regresiva.js";
 import darkTheme from "./Scripts/dark_theme.js";
 import userDeviceInfo from "./Scripts/deteccion_dispositivos.js";
@@ -60,6 +61,9 @@ d.addEventListener("DOMContentLoaded", (e) => {
 
   // Sorteo
   draw("#winner-btn", ".player");
+
+  // Carruser de contenido
+  slider();
 });
 
 d.addEventListener("keydown", (e) => {
