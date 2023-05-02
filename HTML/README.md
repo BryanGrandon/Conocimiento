@@ -82,29 +82,49 @@ Emmet.io allows us to create Basic structure for HTML.
 
 ```html
 <p>
+  <!-- strong text -->
   <strong></strong>
+
+  <!-- Emphasized text -->
   <em></em>
+
+  <!-- highlighted -->
   <mark></mark>
+
+  <!-- italica -->
   <i></i>
+
+  <!-- bold -->
   <b></b>
+
+  <!-- underlining -->
   <u></u>
+
+  <!-- strikethrough -->
   <s></s>
+
   <span></span>
   <cite></cite>
-  <a></a>
+
+  <!-- links -->
+  <a href="" target="_blank">link name</a>
 </p>
 ```
 
 ---
 
-## Multimedia
+## Content types
 
-- img
-  - alt
-- video
-  - controls
-- audio
-  - controls
+```html
+<!-- Image -->
+<img src="imageAddress.png" alt="image name" />
+
+<!-- Video -->
+<video src="videoAddress.mp4" controls></video>
+
+<!-- Audio -->
+<audio src="audioAddress.mp3" controls></audio>
+```
 
 ## Table
 
