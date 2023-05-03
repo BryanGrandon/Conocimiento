@@ -1,4 +1,4 @@
-# Apuntes de HTML
+# HTML Notes
 
 HTML (HyperText Markup Lenguage) it is a markup language that is used to create and structure the content of web pages.
 
@@ -126,6 +126,8 @@ Emmet.io allows us to create Basic structure for HTML.
 <audio src="audioAddress.mp3" controls></audio>
 ```
 
+---
+
 ## Table
 
 ```html
@@ -152,6 +154,8 @@ Emmet.io allows us to create Basic structure for HTML.
   </tfoot>
 </table>
 ```
+
+---
 
 ## Form
 
@@ -181,17 +185,32 @@ Emmet.io allows us to create Basic structure for HTML.
 </form>
 ```
 
-## Interactivas
+---
 
-- detals
-  - summary
-- dialog
+## Interactive
+
+```html
+<!-- Dropdown -->
+<details>
+  <summary></summary>
+</details>
+
+<!-- Dialog window -->
+<dialog id="">
+  <button id="">close</button>
+</dialog>
+<button id="">show</button>
+```
+
+---
 
 ## Scripts
 
 - script
   - defer
   - async
+
+---
 
 ## Semanticas
 
