@@ -128,17 +128,30 @@ Emmet.io allows us to create Basic structure for HTML.
 
 ## Table
 
-- table
-- caption
-- thead
-  - tr
-  - th
-- tbody
-  - tr
-  - td
-- tfoot
-  - tr
-  - td
+```html
+<table>
+  <caption></caption>
+  <thead>
+    <tr>
+      <th>(1)</th>
+      <th>(2)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(1)</td>
+      <td>(2)</td>
+    </tr>
+  </tbody>
+  <!-- Result -->
+  <tfoot>
+    <tr>
+      <td>(1)</td>
+      <td>(2)</td>
+    </tr>
+  </tfoot>
+</table>
+```
 
 ## Form
 
