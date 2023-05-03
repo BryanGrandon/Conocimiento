@@ -155,16 +155,31 @@ Emmet.io allows us to create Basic structure for HTML.
 
 ## Form
 
-- form
-- fieldset
-  - legend
-- label
-- input
-- select
-  - option
-- datalist
-  - option
-- button
+```html
+<form action="">
+  <fieldset>
+    <legend>Fieldset name</legend>
+    <label for="">Name input</label>
+    <input type="" name="" id="" />
+
+    <!-- Options -->
+    <select name="" id="">
+      <option value="option1">Opcion - 1</option>
+      <option value="option2">Opcion - 2</option>
+    </select>
+
+    <input type="text" list="items" />
+    <datalist id="items">
+      <option value="1">Opcion 1</option>
+      <option value="2">Opcion 2</option>
+    </datalist>
+
+    <!-- Button -->
+    <button>Submit</button>
+    <input type="submit" value="Submit" id="" />
+  </fieldset>
+</form>
+```
 
 ## Interactivas
 

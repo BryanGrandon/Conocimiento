@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <!-- action - url address php -->
+    <form action="url">
+      <!-- Visual group -->
+      <fieldset>
+        <legend>Fieldset Title</legend>
+        <!-- for="id of the input" -->
+        <section>
+          <label for="text">Text:</label>
+          <input type="text" name="user" id="text" placeholder="Text..." />
+        </section>
+
+        <section>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="user-email"
+            id="email"
+            placeholder="Email..."
+          />
+        </section>
+
+        <section>
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="user-password"
+            id="password"
+            placeholder="password..."
+          />
+        </section>
+
+        <section>
+          <label for="url">URL:</label>
+          <input type="url" name="address-url" id="url" placeholder="url.." />
+        </section>
+
+        <section>
+          <label for="tel">Tel</label>
+          <input type="tel" name="user-tel" id="tel" placeholder="tel" />
+        </section>
+      </fieldset>
+
+      <fieldset>
+        <legend>Numbers</legend>
+        <section>
+          <label for="number">Number</label>
+          <input
+            type="number"
+            name="numero"
+            id="number"
+            value="25"
+            min="10"
+            max="50"
+            step="5"
+          />
+        </section>
+
+        <section>
+          <label for="range">Range</label>
+          <input
+            type="range"
+            name="rango"
+            id="range"
+            value="25"
+            min="10"
+            max="50"
+            step="5"
+          />
+        </section>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dates</legend>
+        <section>
+          <label for="date">Date</label>
+          <input type="date" name="date" id="date" />
+        </section>
+
+        <section>
+          <label for="time">Time</label>
+          <input type="time" name="time" id="time" />
+        </section>
+
+        <section>
+          <label for="dateTimeLocal">dateTime-local</label>
+          <input type="datetime-local" name="dateTimeLocal" id="datetime" />
+        </section>
+
+        <section>
+          <label for="monthDate">Month</label>
+          <input type="month" name="monthDate" id="month" />
+        </section>
+
+        <section>
+          <label for="weekDate">Week</label>
+          <input type="week" name="weekDate" id="week" />
+        </section>
+      </fieldset>
+
+      <fieldset>
+        <legend>Seleccion</legend>
+        <section>
+          <label for="checkbox">Checkbox</label>
+          <input type="checkbox" name="chek" id="checkbox" />
+        </section>
+
+        <section>
+          <label for="radio">Radio</label>
+          <input type="radio" name="chekCircle" id="radio" />
+        </section>
+      </fieldset>
+
+      <fieldset>
+        <legend>Options</legend>
+        <section>
+          <label for="select">Select</label>
+          <select name="selection" id="select">
+            <option value="opcion1">Opcion - 1</option>
+            <option value="opcion2">Opcion - 2</option>
+            <option value="opcion3">Opcion - 3</option>
+          </select>
+        </section>
+
+        <section>
+          <label for="items">Datalist</label>
+          <input type="text" list="items" />
+          <datalist id="items">
+            <option value="1">Opcion 1</option>
+            <option value="2">Opcion 2</option>
+            <option value="3">Opcion 3</option>
+          </datalist>
+        </section>
+      </fieldset>
+
+      <fieldset>
+        <legend>Colores</legend>
+        <section>
+          <label for="color">Color</label>
+          <input type="color" name="colors" id="color" />
+        </section>
+      </fieldset>
+
+      <fieldset>
+        <legend>File section</legend>
+        <label for="file">File</label>
+        <input type="file" name="file" id="file" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Buttons</legend>
+        <section>
+          <label for="submit">Submit</label>
+          <input type="submit" value="Submit" id="submit" />
+        </section>
+
+        <section>
+          <label for="reset">Reset</label>
+          <input type="reset" value="Reset" id="reset" />
+        </section>
+
+        <section>
+          <label for="button">button Label</label>
+          <button id="button">button</button>
+        </section>
+      </fieldset>
+
+      <fieldset>
+        <legend>Progress gauges</legend>
+        <section>
+          <label>progress</label>
+          <progress max="100" value="25"></progress>
+        </section>
+        <section>
+          <label>meter</label>
+          <meter
+            min="0"
+            max="100"
+            low="25"
+            high="75"
+            optimum="100"
+            value="75"
+          ></meter>
+        </section>
+      </fieldset>
+    </form>
+  </body>
+</html>
