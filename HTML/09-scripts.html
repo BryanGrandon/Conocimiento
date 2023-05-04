@@ -1,61 +1,27 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Las formas de agregar codigo JS al archivo HTML"
-    />
-    <!-- script con atributo defer -->
+
+    <!-- defer attribute -> defer script execution to end of page load -->
     <script defer src="script.js"></script>
+
+    <!-- async attribute -> Run the script as soon as it is available -->
+    <script async src="script.js"></script>
+
     <title>Script</title>
   </head>
   <body>
-    <h3>La formas de integrar codigo JavaScript</h3>
-    <dl>
-      <dt>Script en linea</dt>
-      <dd>El código JS se incluye en el HTML, dentro de la etiqueta script.</dd>
-      <dt>Script externo</dt>
-      <dd>El código JS se incluye en el fichero Javascript enlazado en src.</dd>
-    </dl>
-    <!-- Script en linea -->
+    <!-- Normal charge -> Block the page load and immediately execute the script -->
+
+    <!-- Script in line -->
     <script>
-      variable = confirm("Eres mayor de edad");
-      console.log(variable); // aceptar = true, cancelar = false
+      let variable = confirm("You are of age");
+      console.log(variable);
     </script>
-    <!-- Script externo -->
+
+    <!-- external script -->
     <script src="script.js"></script>
-
-    <h3>Modo de carga del string</h3>
-    <p>
-      Cuando indicamos un <b>script externo</b> mediante el atributo src, por
-      defecto <b>el proceso de carga del script</b> por parte del navegador es
-      el siguiente:
-    </p>
-    <p>
-      <strong>Detiene</strong> temporalmente la carga del HTML en el lugar donde
-      se encontro el script. <br />
-      <strong>Descarga</strong> el script .js al cache de ficheros temporales
-      del navegador. <br />
-      <strong>Ejecuta</strong> el script una vez descargado. <br />
-      <strong>Reanuda</strong> la carga del documento HTML por donde lo dejo, en
-      cuanto termina la ejecucion
-    </p>
-
-    <h4>Modo de carga</h4>
-    <dl>
-      <dt>Carga normal</dt>
-      <dd>Atributo (ninguno)</dd>
-      <dd>Bloquea la carga de la página y se ejecuta inmediatamente.</dd>
-      <br />
-      <dt>Carga asincrona</dt>
-      <dd>Atributo (async)</dd>
-      <dd>Ejecuta el script tan pronto como esté disponible.</dd>
-      <br />
-      <dt>Carga diferida</dt>
-      <dd>Atributo (defer)</dd>
-      <dd>Aplaza la ejecución del script al final de la carga de la página.</dd>
-    </dl>
   </body>
 </html>

@@ -206,9 +206,19 @@ Emmet.io allows us to create Basic structure for HTML.
 
 ## Scripts
 
-- script
-  - defer
-  - async
+```html
+<!-- Declaration types -->
+
+<script src="" defer></script>
+
+<script src="" async></script>
+
+<script src=""></script>
+
+<script>
+  let variable = confirm("You are of age");
+</script>
+```
 
 ---
 
