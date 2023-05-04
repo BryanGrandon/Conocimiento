@@ -222,14 +222,26 @@ Emmet.io allows us to create Basic structure for HTML.
 
 ---
 
-## Semanticas
+## Semantic
 
-- h1 - h6
-- main
-- div
-- header
-- secction
-- article
-- footer
-- aside
-- address
+```html
+<h1>Header level 1</h1>
+<!-- Until -->
+<h6>Header level 6</h6>
+
+<main></main>
+
+<div></div>
+
+<header></header>
+
+<section></section>
+
+<article></article>
+
+<footer></footer>
+
+<aside></aside>
+
+<address></address>
+```
