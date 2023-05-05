@@ -1,22 +1,22 @@
-let declararTrue = true;
-let declararFalse = false;
+let isTrue = true;
+let isFalse = false;
 
-const valoresQueTiendenAVerdadero = {
+const valuesTendingToTrue = {
   boolean: true,
   object: {},
   array: [],
   string: "string",
-  number: 0.1 /* No el 0 */,
-  infinito: Infinity,
+  number: 0.1,
+  infinite: Infinity,
 };
 
-const valoresQueTiendenAFalso = {
-  boolen: false,
-  nulo: null,
-  indefinido: undefined,
-  number: 0,
+const valuesTendingToFalse = {
+  boolean: false,
+  null: null,
+  undefined: undefined,
+  numberZero: 0,
   notANumber: NaN,
-  stringVacio: "",
+  stringEmpty: "",
 };
 
 if ([]) {
