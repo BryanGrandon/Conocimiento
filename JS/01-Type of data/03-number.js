@@ -1,9 +1,9 @@
-// Valores
-let positivo = 21;
-let negativo = -21; // Con guion(-)
-let cero = 0;
-let infinito = Infinity;
-let decimal = 5.8; // con punto(.)
+// Values
+let positive = 21;
+let negative = -21;
+let zero = 0;
+let infinite = Infinity;
+let decimal = 5.8;
 let nan = NaN;
 
 // NaN (Not a Number)
@@ -11,13 +11,16 @@ console.log(21 * "string"); // NaN
 console.log(0 / 0); // NaN
 console.log(Infinity - Infinity); // NaN
 
-// METODOS
+// METHODS
 
-let stringNumeroEntero = "21.5";
-console.log(parseInt(stringNumeroEntero)); // 21
+let stringOfNumber = "21.5";
 
-let stringNumeroFlotante = "21.5";
-console.log(parseFloat(stringNumeroFlotante)); // 21.5
+let wholeNumber = parseInt(stringOfNumber);
+console.log(wholeNumber);
 
-let establecerDecimales = 1.23456789;
-console.log(establecerDecimales.toFixed(2)); // 1,23
+let floatNumber = parseFloat(stringOfNumber);
+console.log(floatNumber); // 21.5
+
+let setDecimals = 1.23456789;
+let twoDecimal = setDecimals.toFixed(2);
+console.log(twoDecimal);
