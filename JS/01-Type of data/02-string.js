@@ -8,8 +8,8 @@ console.log(singleQuotes + doubleQuotes); // HelloWorld
 
 // Interpolate
 let user = "Bryan";
-let accentdQuotes = `Your name is ${user}`;
-console.log(accentdQuotes); // Your name is Bryan
+let accentuatedQuotes = `Your name is ${user}`;
+console.log(accentuatedQuotes); // Your name is Bryan
 
 let dynamicHtmlGeneration = `<ul>
     <li></li>
