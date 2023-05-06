@@ -1,20 +1,25 @@
-const obj = {
-  key: "valor",
-  nombre: "Bryan",
-  obj2: {
-    edad: 21,
+const object = {
+  key: "value",
+  name: "Bryan",
+  object2: {
+    age: 21,
   },
 };
-console.log(obj);
-console.log(obj["key"]); // valor
-console.log(obj.nombre); // Bryan
+console.log(object);
+// {key: 'value', name: 'Bryan', object2: {age: 21} }
 
-let edad = 21;
-let nombre = "Bryan";
-const obj2 = {
-  edad,
-  nombre,
+console.log(object["key"]);
+// value
+
+console.log(object.name);
+// Bryan
+
+let age = 21;
+let nameFamele = "Macarena";
+const object2 = {
+  age,
+  nameFamele,
 };
 
-console.log(obj2);
-console.log(obj2.nombre); // Bryan
+console.log(object2);
+console.log(object2.nameFamele); // Macarena
