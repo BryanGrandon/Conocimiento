@@ -8,14 +8,14 @@ const object = {
 console.log(object);
 // {key: 'value', name: 'Bryan', object2: {age: 21} }
 
-console.log(object["key"]);
-// value
+console.log(object["key"]); // value
+console.log(object.name); // Bryan
 
-console.log(object.name);
-// Bryan
+// literal objects
 
 let age = 21;
 let nameFamele = "Macarena";
+
 const object2 = {
   age,
   nameFamele,
