@@ -1,28 +1,35 @@
-// Metodos Estaticos
-let fecha = new Date();
+// Static Methods
+let date = new Date();
 
-fecha.getDate(); // Dia del mes
+let dayOfTheMonth = date.getDate();
+console.log(dayOfTheMonth);
 
-fecha.getDay(); // Dia de la semana
+let dayOfTheWeek = date.getDay();
+console.log(dayOfTheWeek);
 
-fecha.getMonth(); // Mes del año
+let monthOfTheYear = date.getMonth();
+console.log(monthOfTheYear);
 
-fecha.getFullYear(); // Año
+let year = date.getFullYear();
+console.log(year);
 
-fecha.getHours(); // Hora
+let hours = date.getHours();
+console.log(hours);
 
-fecha.getMinutes(); // Minutos
+let minutes = date.getMinutes();
+console.log(minutes);
 
-fecha.getSeconds(); // Segundos
+let seconds = date.getSeconds();
+console.log(seconds);
 
-// Metodos Date String
+// Date String
 
-fecha.toString(); // 'Thu Mar 09 2023 11:43:20 GMT-0300'
+date.toString(); // 'Thu Mar 09 2023 11:43:20 GMT-0300'
 
-fecha.toDateString(); // 'Thu Mar 09 2023'
+date.toDateString(); // 'Thu Mar 09 2023'
 
-fecha.toLocaleString(); // '9/3/2023, 11:42:32'
+date.toLocaleString(); // '9/3/2023, 11:42:32'
 
-fecha.toLocaleDateString(); // '9/3/2023'
+date.toLocaleDateString(); // '9/3/2023'
 
-fecha.toLocaleTimeString(); // '11:44:35'
+date.toLocaleTimeString(); // '11:44:35'
