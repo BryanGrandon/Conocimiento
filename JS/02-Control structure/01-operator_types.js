@@ -1,31 +1,37 @@
 // Arithmetic
 
-let number1 = 2,
-  number2 = 4;
+function aritmetic(value, number1, number2) {
+  if (value == "addition") {
+    let result = number1 + number2;
+    console.log(result);
+  } else if (value == "subtraction") {
+    let result = number1 - number2;
+    console.log(result);
+  } else if (value == "division") {
+    let result = number1 / number2;
+    console.log(result);
+  } else if (value == "multiplication") {
+    let result = number1 * number2;
+    console.log(result);
+  } else if (value == "elevation") {
+    let result = number1 ** number2;
+    console.log(result);
+  } else if (value == "rest") {
+    let result = number1 % number2;
+    console.log(result);
+  } else {
+    console.log(`"${value}" not valid `);
+  }
+}
+aritmetic("addition", 2, 4);
 
-let addition = number1 + number2;
-console.log(addition); // 6
+let number = 10;
 
-let subtraction = number1 - number2;
-console.log(subtraction); // -2
+let increase = number++;
+console.log(number);
 
-let division = number1 / number2;
-console.log(division); // 0.5
-
-let multiplication = number1 * number2;
-console.log(multiplication); // 8
-
-let elevation = number1 ** number2;
-console.log(elevation); // 16
-
-let rest = number1 % number2;
-console.log(rest);
-
-let increase = number1++;
-console.log(number1); // 3
-
-let decrement = number2--;
-console.log(number2); // 3
+let decrement = number--;
+console.log(number);
 
 // logical
 
@@ -53,32 +59,40 @@ let logical = (value1, value2) => {
 };
 
 logical(true, true);
-logical(true, false);
-logical(false, true);
-logical(false, false);
+// logical(true, false);
+// logical(false, true);
+// logical(false, false);
 
 // relational
 
-let equal = 2 == "2";
-console.log(equal); // true
+function relational(number1, value, number2) {
+  if (value == "==") {
+    let result = number1 == number2;
+    console.log(result);
+  } else if (value == "===") {
+    let result = number1 === number2;
+    console.log(result);
+  } else if (value == "!=") {
+    let result = number1 != number2;
+    console.log(result);
+  } else if (value == "!==") {
+    let result = number1 !== number2;
+    console.log(result);
+  } else if (value == ">") {
+    let result = number1 > number2;
+    console.log(result);
+  } else if (value == ">=") {
+    let result = number1 >= number2;
+    console.log(result);
+  } else if (value == "<") {
+    let result = number1 > number2;
+    console.log(result);
+  } else if (value == "<=") {
+    let result = number1 > number2;
+    console.log(result);
+  } else {
+    console.log(`"${value}" not valid `);
+  }
+}
 
-let strictlyTheSame = 2 === "2";
-console.log(strictlyTheSame); // false
-
-let unequal = 2 != "2";
-console.log(unequal); // false
-
-let strictlyUneven = 2 !== "2";
-console.log(strictlyUneven); //true
-
-let greaterThan = 4 > 4;
-console.log(greaterThan); // false
-
-let greaterOrEqual = 4 >= 4;
-console.log(greaterOrEqual); /// true
-
-let smallerThan = 4 < 4;
-console.log(smallerThan); // false
-
-let smallerThanOrEqual = 4 <= 4;
-console.log(smallerThanOrEqual); // true
+relational(2, "==", "2");
