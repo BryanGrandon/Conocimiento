@@ -6,11 +6,11 @@ class Human {
   set setCountry(newCountry) {
     return (this.country = newCountry);
   }
-  get getGenero() {
-    return this.genero;
+  get getGender() {
+    return this.gender;
   }
-  set setGenero(genero) {
-    return (this.genero = genero);
+  set setGender(gender) {
+    return (this.gender = gender);
   }
 }
 
@@ -20,12 +20,12 @@ console.log(human1); // Human {country: 'Chile', languaje: 'Español'}
 human1.setCountry = "España";
 console.log(human1);
 
-// GET agregar genero SET establezer el genero
-human1.getGenero;
-human1.setGenero = "male";
+// GET add gender, SET sets gender
+human1.getGender;
+human1.setGender = "male";
 console.log(human1);
 
-class Personal extends Human {
+class Staff extends Human {
   constructor(country, languaje, name, age) {
     super(country, languaje);
     this.name = name;
@@ -33,5 +33,5 @@ class Personal extends Human {
   }
 }
 
-const human2 = new Personal("Chile", "Español", "Bryan", 21);
+const human2 = new Staff("Chile", "Español", "Bryan", 21);
 console.log(human2); // Personal {country: 'Chile', languaje: 'Español', name: 'Bryan', age: 21}
