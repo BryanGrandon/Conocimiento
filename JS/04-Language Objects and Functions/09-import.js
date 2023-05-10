@@ -1,3 +1,3 @@
-import forExport from "./08-export";
+import forExport from "./08-export.js";
 
 forExport("Bryan");
