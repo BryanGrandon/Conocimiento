@@ -1,29 +1,29 @@
-/* Los Sets son una estructura de datos que contiene valores unicos, 
-los Sets no permiten elementos duplicados y no guardan los elementos */
+/* Sets are a data structure that contains unique value,
+Sets do not allow duplicate items and do not save items */
 
 const arr = [1, 2, 3, 1, 2, 3];
 const arr2 = [...new Set(arr)];
 console.log(arr2); // [1, 2, 3]
 
-// Para agregar al set
-const setAdd = new Set();
-setAdd.add(1);
-setAdd.add(2);
-setAdd.add(3);
+// Add to set
+const addSet = new Set();
+addSet.add(1);
+addSet.add(2);
+addSet.add(3);
 
-console.log(setAdd); // Set {1, 2, 3}
+console.log(addSet); // Set {1, 2, 3}
 
-// Para pasarlo a un array
+// Pass it to an array
 const set = [1, 2, 3, 1, 2, 3];
 const setArr = Array.from(new Set(set));
 console.log(setArr); // [1, 2, 3]
 
-// Buscar un valor en el set
-const buscar = new Set([1, 2, 3, 1, 2, 3]);
-console.log(buscar); // Set {1, 2, 3}
-console.log(buscar.has(2)); // true
+// Search from a value in set
+const lookFor = new Set([1, 2, 3, 1, 2, 3]);
+console.log(lookFor); // Set {1, 2, 3}
+console.log(lookFor.has(2)); // true
 
-// Eliminar elemento
+// Delete element
 const setDelete = new Set([1, 2, 3]);
 setDelete.delete(2);
 console.log(setDelete); // Set {1, 3}
