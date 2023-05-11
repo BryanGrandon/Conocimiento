@@ -1,5 +1,5 @@
-/* Sincrono: La respuesta sucede en el presente, una operacion sincrona esperara el resultado.
-Asincrono: La respuesta sucede a futuro, una operacion asincrona no esperara el resultado. */
+/* Synchronous: the response happens in the present, a synchronous operation you wait for the result.
+Asynchronous: The response happens in the future, an asynchronous operation does not wait for the result. */
 
 console.log(1);
 
@@ -9,10 +9,4 @@ setTimeout(() => {
 
 console.log(3);
 
-// Orden de ejecucion -> 1, 3, 2
-
-/* Esta forma de ejecucion es util para evitar que un proceso se bloquee y evitar 
-que el usuario tenga que esperar a que se complete una tarea antes de poder interactuar */
-
-/* Para lograrla asincronia en JavaScript se puede usar callbacks, promesas y operadores $async$/$await$.
-Las APIs del navegador tambien son utiles para lograr la asincronia en JavaScript */
+// execution order -> 1, 3, 2
