@@ -5,7 +5,7 @@ let timer1 = setTimeout(() => {
 
 clearTimeout(timer1); // -> Finish code
 
-// Runthe code indefinitely
+// Run the code indefinitely
 let timer2 = setInterval(() => {
   console.log("code in setInterval");
 }, 3000);
