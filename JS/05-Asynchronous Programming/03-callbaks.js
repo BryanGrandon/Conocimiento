@@ -1,30 +1,25 @@
-/* Es una funcion que se pasa a otra funcion como un argumento, que luego se invoca dentro 
-de la funcion externa para completar algun tipo de rutina o accion.*/
+// It is a function that is passed as an argument
 
 function modify(array, callback) {
-  // hacemos algo ...
   array.push("bryan");
-  // despues de hacer algo ...
   callback(array);
 }
 
-const names = ["catalina", "camila", "ricardo"];
+const names = ["catalina", "camila"];
 
-modify(names, function (array) {
-  console.log(`He modificado el array y ahora es de ${array.length} elementos`);
+modify(names, (array) => {
+  console.log(`Now the array is  ${array.length} elements`);
 });
 
-// Para que sea asincrono
+// asynchronous
 
 function modify2(array, callback) {
-  // hacemos algo ...
   array.push("andres");
-  // despues de hacer algo ...
-  setTimeout(function () {
-    callback(array); // despues de 3s se ejecuta el callback
+  setTimeout(() => {
+    callback(array);
   }, 3000);
 }
 
-modify2(names, function (array) {
-  console.log(`He modificado el array y ahora es de ${array.length} elementos`);
+modify2(names, (array) => {
+  console.log(`Now the array is  ${array.length} elements`);
 });
