@@ -1,5 +1,5 @@
-/* Synchronous: the response happens in the present, a synchronous operation you wait for the result.
-Asynchronous: The response happens in the future, an asynchronous operation does not wait for the result. */
+/* Synchronous: The synchronous operation you wait for the result..
+Asynchronous: The asynchronous operation does not wait for the result. */
 
 console.log(1);
 
