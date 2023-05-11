@@ -1,31 +1,47 @@
-/* surgen para simplificar el manejo de las promesas. */
-
-function cuadradoPromise(value) {
+function elevationPromise(value) {
   if (typeof value !== "number") {
     return Promise.reject(
-      `Error, el valor ingresado "${value}" no en un numero`
+      `mistake. The entered value '${value}' is not a number`
     );
   }
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve({ value, result: value * value });
-    }, 0 | (Math.random() * 1000));
+      resolve({
+        value,
+        result: value * value,
+      });
+    }, Math.random() * 1000);
   });
 }
-async function funcionAsincronaDeclarada() {
+
+//  Async
+async function asynchronousFunction() {
   try {
-    console.log("Inicio Async Function");
+    console.log("Start Async Function");
 
-    let obj = await cuadradoPromise(0);
+    // await -> wait for the result
+    let obj = await elevationPromise(0);
     console.log(`Async Function: ${obj.value}, ${obj.result}`);
 
-    obj = await cuadradoPromise(1);
+    obj = await elevationPromise(1);
     console.log(`Async Function: ${obj.value}, ${obj.result}`);
 
-    console.log("Fin Async Function");
+    obj = await elevationPromise(2);
+    console.log(`Async Function: ${obj.value}, ${obj.result}`);
+
+    obj = await elevationPromise(3);
+    console.log(`Async Function: ${obj.value}, ${obj.result}`);
+
+    obj = await elevationPromise(4);
+    console.log(`Async Function: ${obj.value}, ${obj.result}`);
+
+    obj = await elevationPromise("5");
+    console.log(`Async Function: ${obj.value}, ${obj.result}`);
+
+    console.log("Finished Async Function");
   } catch (err) {
     console.error(err);
   }
 }
 
-funcionAsincronaDeclarada();
+asynchronousFunction();
