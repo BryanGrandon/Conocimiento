@@ -1,23 +1,21 @@
-/* Los Maps son utiles para almacenar y retornar datos de forma rapida y eficiente */
+const person = new Map();
 
-const persona = new Map();
+// Add values to map
+person.set("name", "Bryan");
+person.set("age", 21);
+console.log(person); // Map {'name' => 'Bryan', 'age' => 21}
 
-// Agregar valores al Map
-persona.set("nombre", "Bryan");
-persona.set("edad", 21);
-console.log(persona); // Map {'nombre' => 'Bryan', 'edad' => 21}
+// Get the values
+console.log(person.get("name")); // Bryan
 
-// Obtener los valores
-console.log(persona.get("nombre")); // Bryan
+// Check if a value exists
+console.log(person.has("age")); // true
+console.log(person.has("gender")); // false
 
-// Comprueba se existe un valor
-console.log(persona.has("edad")); // true
-console.log(persona.has("rut")); // false
+// Remove a value to the map
+console.log(person.delete("age")); // true
+console.log(person.delete("age")); // false
 
-// Eliminar un valor al map
-console.log(persona.delete("edad")); // true
-console.log(persona.delete("edad")); // false
-
-// Limpia todo el Map
-persona.clear();
-console.log(persona); // Map { }
+// Clear the whole map
+person.clear();
+console.log(person); // Map { }
