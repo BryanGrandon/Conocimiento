@@ -3,7 +3,7 @@
 let random = Math.round(Math.random() * 100 + 5);
 const objUser = {
   property: "valor",
-  [`id_${random}`]: "Valor Aleatorio",
+  [`id_${random}`]: "Random value",
 };
 
 const users = ["jon", "bryan", "camila"];
