@@ -1,15 +1,15 @@
-this.lugar = "Global";
+this.place = "Global";
 
-function saludar(saludo, nombre) {
-  console.log(`${saludo} ${nombre} desde ${this.lugar}`);
+function greet(greeting, name) {
+  console.log(`${greeting} ${name} desde ${this.place}`);
 }
 
-const obj = { lugar: "Obj" };
+const obj = { place: "Obj" };
 
-saludar.call(obj, "Hola", "Bryan"); // 'Hola Bryan desde Obj'
-saludar.call(null, "Hola", "Bryan"); // 'Hola Bryan desde Global'
-saludar.call(this, "Hola", "Bryan"); // 'Hola Bryan desde Global'
+greet.call(obj, "Hello", "Bryan"); // Obj
+greet.call(null, "Hello", "Bryan"); // Global
+greet.call(this, "Hello", "Bryan"); // Global
 
-saludar.apply(obj, ["Adios", "Camila"]); // 'Adios Camila desde Obj'
-saludar.apply(null, ["Adios", "Camila"]); // 'Adios Camila desde Global'
-saludar.apply(this, ["Adios", "Camila"]); // 'Adios Camila desde Global'
+greet.apply(obj, ["Bye", "Camila"]); // Obj
+greet.apply(null, ["Bye", "Camila"]); // Global
+greet.apply(this, ["Bye", "Camila"]); // Global
