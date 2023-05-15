@@ -1,31 +1,31 @@
-/* This en JavaScript es una palabra clave que se refiere al objeto 
-desde el cual se llama una funcion, y es sensible al contexto. */
+/* ( this ) in JavaScript is a keyword that refers to the object 
+  form which a function is called and is context sensitive */
 
-// Contexto Global //
+// Global context //
 
-this.nombre = "Global";
-function imprimir() {
-  console.log(this.nombre);
+this.name = "Global";
+
+function print() {
+  console.log(this.name); // Global
 }
+print();
 
-imprimir(); // Global
-
-// function anonima //
+// anonymous function
 
 const obj = {
-  nombre: "obj",
-  imprimir: function () {
-    console.log(this.nombre);
+  name: "obj",
+  print: function () {
+    console.log(this.name); // obj
   },
 };
-obj.imprimir(); // obj
+obj.print();
 
-// arrow function (No ocupar) //
+// arrow function (Not occupy)
 
 const objArrow = {
-  nombre: "obj arrow",
-  imprimir: () => {
-    console.log(this.nombre);
+  name: "obj arrow",
+  print: () => {
+    console.log(this.name); // Global
   },
 };
-objArrow.imprimir(); // Global
+objArrow.print();
