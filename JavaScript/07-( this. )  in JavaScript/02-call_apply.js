@@ -1,12 +1,13 @@
-/* Es una forma de ejecutar una funcion */
-this.lugar = "Global";
+// It is a way of executing a function
 
-function saludar() {
-  console.log(`${this.lugar}`);
+let place = "Global";
+
+function greet() {
+  console.log(`${this.place}`);
 }
 
-const obj = { lugar: "Obj" };
+const obj = { place: "Obj" };
 
-saludar(); // Global
-saludar.call(obj); // Obj
-saludar.apply(obj); // Obj
+greet(); // Global
+greet.call(obj); // Obj
+greet.apply(obj); // Obj
