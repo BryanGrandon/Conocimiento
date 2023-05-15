@@ -1,20 +1,26 @@
-/* Los proxies le permiten modificar, validar o remplazar el comportamiento predeterminado. */
+/* Proxies allow you to modify, validate, or averride the fault behavior */
 
-const persona = {
-  nombre: "",
-  apellido: "",
-  edad: 0,
+const person = {
+  name: "",
+  lastName: "",
+  age: 0,
 };
 
-const manejador = {
-  set(obj, prop, valor) {
-    obj[prop] = valor;
+const handler = {
+  set(obj, prop, value) {
+    if (Object.keys(obj).indexOf(prop) === -1) {
+      return console.error(`The property "${prop}" does not exist`);
+    }
+
+    // Validations for elements
+
+    obj[prop] = value;
   },
 };
 
-const jon = new Proxy(persona, manejador);
-jon.nombre = "Bryan";
-jon.apellido = "Grandon";
-jon.edad = 21;
+const bryan = new Proxy(person, handler);
+bryan.name = "Bryan";
+bryan.lastName = "Grandon";
+bryan.age = 21;
 
-console.log(jon); // {nombre: 'Bryan', apellido: 'Grandon', edad: 21}
+console.log(bryan); // {name: 'Bryan', lastName: 'Grandon', age: 21}
