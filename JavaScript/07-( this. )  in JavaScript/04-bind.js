@@ -1,18 +1,16 @@
-/* El metodo bind() es una funcion que permite vincular un objeto a una funcion */
+//  The bind() method is a function that allows you to bind an object to a function
 
-this.nombre = "Global";
+this.name = "Global";
 
-const persona = {
-  nombre: "Bryan",
-  saludar: function () {
-    console.log(`Hola ${this.nombre}`); // Hola Bryan, Hola Global
+const person = {
+  name: "Bryan",
+  greet: function () {
+    console.log(`Hello ${this.name}`); // Hello Bryan, Hello Global
   },
 };
+person.greet();
 
-persona.saludar();
-
-const otraPersona = {
-  saludar: persona.saludar.bind(this),
+const anotherPerson = {
+  greet: person.greet.bind(this),
 };
-
-otraPersona.saludar();
+anotherPerson.greet();
