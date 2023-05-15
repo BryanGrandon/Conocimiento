@@ -1,9 +1,10 @@
-/*  Es un formato ligero de intercambio de datos */
-// Es similar a un objeto en JS PERO con diferente sintaxis en ciertas cosas
+// It is a lightweight data exchange format
+// It is similar to an object in JS but with different syntax
+
 const json = {
-  cadena: "Bryan",
-  number: 21,
-  booleano: true,
-  arreglos: ["correr", "programar", 21],
-  objetos: { nombre: "Bryan", edad: 21 },
+  textString: "Bryan",
+  number: "21",
+  boolean: "true",
+  array: ["correr", "programar", "21"],
+  objet: { name: "Bryan", age: "21" },
 };

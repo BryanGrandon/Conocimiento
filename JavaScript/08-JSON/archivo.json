@@ -1,7 +1,7 @@
 {
-  "cadena": "Bryan",
+  "textString": "Bryan",
   "number": "21",
-  "booleano": "true",
-  "arreglos": ["correr", "programar", "21"],
-  "objetos": { "nombre": "Bryan", "edad": "21" }
+  "boolean": "true",
+  "array": ["correr", "programar", "21"],
+  "objet": { "name": "Bryan", "age": "21" }
 }
