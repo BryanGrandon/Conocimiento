@@ -1,6 +1,6 @@
 // It is a way of executing a function
 
-let place = "Global";
+this.place = "Global";
 
 function greet() {
   console.log(`${this.place}`);
