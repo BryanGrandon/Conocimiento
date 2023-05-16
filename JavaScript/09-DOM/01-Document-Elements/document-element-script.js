@@ -25,7 +25,7 @@ const externalFile = {
 };
 console.log(externalFile);
 
-console.log("Seleccionado por el usuario");
+console.log("User selected");
 setTimeout(() => {
   console.log(document.getSelection().toString());
 }, 3000);
