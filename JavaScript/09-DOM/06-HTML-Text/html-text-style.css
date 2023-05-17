@@ -1,0 +1,25 @@
+h3 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.html-text_item {
+  border-radius: 5px;
+  border: 1px solid #000;
+  margin: 20px;
+  padding: 20px;
+}
+
+.inner-text,
+.text-content,
+.inner-html,
+.outer-html {
+  margin: 20px 0 0;
+  border: 1px dashed #f00;
+}
