@@ -1,6 +1,6 @@
 const $cards = document.querySelector(".cards");
 
-// Forma 1
+// Form 1
 
 const $figure = document.createElement("figure"),
   $img = document.createElement("img"),
@@ -19,7 +19,7 @@ $figure.appendChild($img);
 $figure.appendChild($figcaption);
 $cards.appendChild($figure);
 
-// Forma 2
+// Form 2
 
 const $figure2 = document.createElement("figure");
 
@@ -31,73 +31,81 @@ $figure2.innerHTML = `
 $figure2.classList.add("card");
 $cards.appendChild($figure2);
 
-// Para Multiples Elementos ----------------
+// For Multiple elements ----------------
 
-const $main = document.querySelector("main");
+// Form 1 -> = e
+const $container = document.querySelector(".container");
 
-// Forma 1 -> = e
-
-const estaciones = ["Primavera", "Verano", "Otoño", "Invierno"],
+const seasons = ["Spring", "Summer", "Autumn", "Winter"],
   $ul = document.createElement("ul"),
-  $section = document.createElement("section");
+  $article = document.createElement("article");
 
-$section.classList.add("section-js");
-$ul.classList.add("lista");
-$section.innerHTML = `<h3>Estaciones del año</h3>`;
-$section.appendChild($ul);
-$main.appendChild($section);
+$article.classList.add("section-js");
+$ul.classList.add("list");
+$article.innerHTML = `<h3>Seasons</h3>`;
+$article.appendChild($ul);
+$container.appendChild($article);
 
-estaciones.forEach((e) => {
+seasons.forEach((e) => {
   const $li = document.createElement("li");
   $li.innerText = e;
   $ul.appendChild($li);
 });
 
-// Forma 2 -> += ``
+// Form 2 -> += ``
 
-const continenetes = ["Africa", "America", "Asia", "Europa", "Oceania"],
+const continents = [
+    "North America",
+    "South America",
+    "Europe",
+    "Africa",
+    "Asia",
+    "Australia",
+    "Antarctica",
+  ],
   $ul2 = document.createElement("ul"),
-  $section2 = document.createElement("section");
+  $article2 = document.createElement("article");
 
-$section2.classList.add("section-js");
-$ul2.classList.add("lista");
-$section2.innerHTML = `<h3>Continentes</h3>`;
-$section2.appendChild($ul2);
-$main.appendChild($section2);
+$article2.classList.add("section-js");
+$ul2.classList.add("list");
+$article2.innerHTML = `<h3>Continents</h3>`;
+$article2.appendChild($ul2);
+$container.appendChild($article2);
 
-continenetes.forEach((e) => {
+continents.forEach((e) => {
   $ul2.innerHTML += `<li>${e}</li>`;
 });
 
 // Forma 3 -> Fragment */
 
-const meses = [
-    "Enero",
-    "Febrero",
-    "Marzo",
-    "Abril",
-    "Junio",
-    "Julio",
-    "Agosto",
-    "Septiembre",
-    "Octubre",
-    "Noviembre",
-    "Diciembre",
+const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
   ],
   $ul3 = document.createElement("ul"),
-  $section3 = document.createElement("section"),
+  $article3 = document.createElement("article"),
   $fragment = document.createDocumentFragment();
 
-$section3.innerHTML = `<h3>Meses</h3>`;
-$section3.classList.add("section-js");
-$ul3.classList.add("lista");
-$main.appendChild($section3);
+$article3.innerHTML = `<h3>Month</h3>`;
+$article3.classList.add("section-js");
+$ul3.classList.add("list");
+$container.appendChild($article3);
 
-meses.forEach((e) => {
+months.forEach((e) => {
   const $li = document.createElement("li");
   $li.textContent = e;
   $fragment.appendChild($li);
 });
 
 $ul3.appendChild($fragment);
-$section3.appendChild($ul3);
+$article3.appendChild($ul3);
