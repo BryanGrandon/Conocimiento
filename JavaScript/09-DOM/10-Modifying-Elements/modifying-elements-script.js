@@ -1,15 +1,15 @@
 /* 
 .insertAdjacent...
-    .insertAdjacentElement(position, elemento)
+    .insertAdjacentElement(position, element)
     .insertAdjacentHTML(position, html)
     .insertAdjacentText(position, text)
 
 position:
-    beforebegin (hermano anterior)
-    afterend (hermano siguiente)
+    beforebegin (previous brother)
+    afterend (netx brother)
 
-    afterbegin (primer hijo)
-    beforeend (ultimo hijo)
+    afterbegin (first son)
+    beforeend (last son)
 */
 
 const $cards = document.querySelector(".cards"),
@@ -20,33 +20,32 @@ let $contenCard = `
     <figcaption></figcaption>
 `;
 $newCard.insertAdjacentHTML("afterbegin", $contenCard);
-// Ingresar el contenido como Ultimo hijo
 $cards.insertAdjacentElement("beforeend", $newCard);
 $newCard
   .querySelector("figcaption")
-  .insertAdjacentText("afterbegin", "Arquitectura en JS");
+  .insertAdjacentText("afterbegin", "Architecture JS");
 
 $newCard.classList.add("card");
-$newCard.classList.add("ejemplo");
+$newCard.classList.add("example");
 
-// Otra Forma de ingresar el contenido
+// Another way to enter the content
 
-// primer hijo
+// first son
 setTimeout(() => {
   $cards.prepend($newCard);
 }, 1000);
 
-// Ultimo hijo
+// last son
 setTimeout(() => {
   $cards.append($newCard);
-}, 2000);
-
-// Hermano anterior
-setTimeout(() => {
-  $cards.before($newCard);
 }, 3000);
 
-// Hermano postereior
+// previus brother
+setTimeout(() => {
+  $cards.before($newCard);
+}, 5000);
+
+// next brother
 setTimeout(() => {
   $cards.after($newCard);
-}, 4000);
+}, 7000);

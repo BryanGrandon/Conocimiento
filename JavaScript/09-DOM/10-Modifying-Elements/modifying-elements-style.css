@@ -11,7 +11,7 @@
 }
 
 .card img,
-.ejemplo img {
+.example img {
   display: block;
   object-fit: cover;
   width: 200px;
@@ -19,7 +19,7 @@
 }
 
 .card figcaption,
-.ejemplo figcaption {
+.example figcaption {
   text-align: center;
   padding: 10px;
   font-size: 20px;
@@ -30,13 +30,13 @@
   color: #fffb00;
 }
 .card,
-.ejemplo {
+.example {
   width: 200px;
   border: 2px solid #000;
   border-radius: 5px;
   overflow: hidden;
 }
-.ejemplo figcaption {
+.example figcaption {
   color: #1900ff;
   background: #161616;
 }
