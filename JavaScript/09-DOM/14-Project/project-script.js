@@ -2,6 +2,7 @@ import { alarm, digitalClock } from "./Functions/clock-alarm.js";
 import countdown from "./Functions/countdown.js";
 import hamburgerMenu from "./Functions/hamburger-menu.js";
 import { moveBall, shortcuts } from "./Functions/keyboard-events.js";
+import scrollTopButtton from "./Functions/scroll-button.js";
 
 const d = document;
 
@@ -10,6 +11,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   digitalClock("#clock", "#active-clock", "#disable-clock");
   alarm("Assets/alarm.mp3", "#active-alarm", "#disable-alarm");
   countdown("countdown", "December 19, 2023", "Happy birthday Bryan Grandon");
+  scrollTopButtton(".scroll-top-btn");
 });
 
 // keyboard events
