@@ -1,6 +1,7 @@
 import { alarm, digitalClock } from "./Functions/clock-alarm.js";
 import countdown from "./Functions/countdown.js";
 import darkTheme from "./Functions/dark-theme.js";
+import userDeviceInfo from "./Functions/device-detection.js";
 import hamburgerMenu from "./Functions/hamburger-menu.js";
 import { moveBall, shortcuts } from "./Functions/keyboard-events.js";
 import responsiveTester from "./Functions/responsive-tester.js";
@@ -15,6 +16,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   countdown("countdown", "December 19, 2023", "Happy birthday Bryan Grandon");
   scrollTopButtton(".scroll-top-btn");
   responsiveTester("responsive-tester");
+  userDeviceInfo("user-device");
 });
 
 // keyboard events
