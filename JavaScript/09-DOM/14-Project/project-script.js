@@ -5,6 +5,7 @@ import userDeviceInfo from "./Functions/device-detection.js";
 import getGeolocation from "./Functions/geolocation.js";
 import hamburgerMenu from "./Functions/hamburger-menu.js";
 import { moveBall, shortcuts } from "./Functions/keyboard-events.js";
+import lottery from "./Functions/lottery.js";
 import networkStatus from "./Functions/network-status.js";
 import responsiveTester from "./Functions/responsive-tester.js";
 import scrollTopButtton from "./Functions/scroll-button.js";
@@ -24,6 +25,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   webcam("webcam");
   getGeolocation("geolocation");
   searchFilter(".card-filter", ".card");
+  lottery("#winner-btn", ".player");
 });
 
 // keyboard events
