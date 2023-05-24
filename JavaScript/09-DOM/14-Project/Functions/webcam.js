@@ -1,6 +1,7 @@
 const d = document,
   n = navigator;
-export default function wedCam(id) {
+
+export default function webcam(id) {
   const $video = d.getElementById(id);
   if (n.mediaDevices.getUserMedia) {
     n.mediaDevices
@@ -10,7 +11,7 @@ export default function wedCam(id) {
         $video.play();
       })
       .catch((err) => {
-        console.log(`Sucedio el siguiente error: ${err}`);
+        console.log(`Error: ${err}`);
         $video.insertAdjacentHTML("beforebegin", `<p><mark>${err}</mark></p>`);
       });
   }

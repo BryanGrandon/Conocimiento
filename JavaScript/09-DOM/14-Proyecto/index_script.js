@@ -17,19 +17,6 @@ import { moveBall, shortcuts } from "./Scripts/teclado.js";
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
-  // Menu Hamburger
-  hamburgerMenu(".panel-btn", ".panel", ".menu a");
-
-  // Reloj Alarm
-  digitalClock("#reloj", "#activar-reloj", "#desactivar-reloj");
-  alarm("assets/alarm.mp3", "#activar-alarm", "#desactivar-alarm");
-
-  // Cuenta regresiva
-  countdown("countdown", "December 19, 2023", "Feliz Cumpleaños Bryan Grandon");
-
-  // Scroll top
-  scrollTopButtton(".scroll-top-btn");
-
   // Objeto responsive
   responsiveMedia(
     "youtube",
@@ -65,14 +52,6 @@ d.addEventListener("DOMContentLoaded", (e) => {
   // Carruser de contenido
   slider();
 });
-
-d.addEventListener("keydown", (e) => {
-  shortcuts(e);
-  moveBall(e, ".ball", ".stage");
-});
-
-// Theme dark
-darkTheme(".dark-theme-btn", "dark-mode");
 
 // Conexion de red
 networkStatus();

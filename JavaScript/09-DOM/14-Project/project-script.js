@@ -7,6 +7,7 @@ import { moveBall, shortcuts } from "./Functions/keyboard-events.js";
 import networkStatus from "./Functions/network-status.js";
 import responsiveTester from "./Functions/responsive-tester.js";
 import scrollTopButtton from "./Functions/scroll-button.js";
+import webcam from "./Functions/webcam.js";
 
 const d = document;
 
@@ -18,6 +19,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   scrollTopButtton(".scroll-top-btn");
   responsiveTester("responsive-tester");
   userDeviceInfo("user-device");
+  webcam("webcam");
 });
 
 // keyboard events
