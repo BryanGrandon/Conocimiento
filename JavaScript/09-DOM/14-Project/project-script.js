@@ -10,6 +10,7 @@ import networkStatus from "./Functions/network-status.js";
 import responsiveTester from "./Functions/responsive-tester.js";
 import scrollTopButtton from "./Functions/scroll-button.js";
 import searchFilter from "./Functions/search-filter.js";
+import slider from "./Functions/slider.js";
 import webcam from "./Functions/webcam.js";
 
 const d = document;
@@ -26,6 +27,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   getGeolocation("geolocation");
   searchFilter(".card-filter", ".card");
   lottery("#winner-btn", ".player");
+  slider();
 });
 
 // keyboard events
