@@ -11,15 +11,15 @@ export default function getGeolocation(id) {
   const success = (position) => {
     let coords = position.coords;
     console.log(position);
-    $id.innerHTML = `<p>Tu posicion actual es:</p>
+    $id.innerHTML = `<p>Your current position is:</p>
     <ul>
-        <li>Latitud: <b>${coords.latitude}</b></li>
-        <li>Longitud: <b>${coords.longitude}</b></li>
-        <li>precicion: <b>${Math.round(coords.accuracy)}</b>metros</li>
+        <li>Latitude: <b>${coords.latitude}</b></li>
+        <li>Length: <b>${coords.longitude}</b></li>
+        <li>Precision: <b>${Math.round(coords.accuracy)}</b>metros</li>
     </ul>
     <a href="https://www.google.com/maps/@${coords.latitude},${
       coords.longitude
-    },17z" target="_blank" rel="noopener" >Ver en google maps</a>
+    },17z" target="_blank" rel="noopener" >To see in google maps</a>
     `;
   };
   const error = (err) => {
