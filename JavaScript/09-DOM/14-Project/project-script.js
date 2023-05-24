@@ -8,6 +8,7 @@ import { moveBall, shortcuts } from "./Functions/keyboard-events.js";
 import networkStatus from "./Functions/network-status.js";
 import responsiveTester from "./Functions/responsive-tester.js";
 import scrollTopButtton from "./Functions/scroll-button.js";
+import searchFilter from "./Functions/search-filter.js";
 import webcam from "./Functions/webcam.js";
 
 const d = document;
@@ -22,6 +23,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   userDeviceInfo("user-device");
   webcam("webcam");
   getGeolocation("geolocation");
+  searchFilter(".card-filter", ".card");
 });
 
 // keyboard events
