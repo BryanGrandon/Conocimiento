@@ -4,6 +4,7 @@ import darkTheme from "./Functions/dark-theme.js";
 import userDeviceInfo from "./Functions/device-detection.js";
 import hamburgerMenu from "./Functions/hamburger-menu.js";
 import { moveBall, shortcuts } from "./Functions/keyboard-events.js";
+import networkStatus from "./Functions/network-status.js";
 import responsiveTester from "./Functions/responsive-tester.js";
 import scrollTopButtton from "./Functions/scroll-button.js";
 
@@ -27,3 +28,6 @@ d.addEventListener("keydown", (e) => {
 
 // Dark theme
 darkTheme(".dark-theme-btn", "dark-mode");
+
+// Networ Status
+networkStatus();
