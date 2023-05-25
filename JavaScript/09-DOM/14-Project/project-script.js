@@ -1,17 +1,18 @@
-import { alarm, digitalClock } from "./Functions/clock-alarm.js";
-import countdown from "./Functions/countdown.js";
-import darkTheme from "./Functions/dark-theme.js";
-import userDeviceInfo from "./Functions/device-detection.js";
-import getGeolocation from "./Functions/geolocation.js";
-import hamburgerMenu from "./Functions/hamburger-menu.js";
-import { moveBall, shortcuts } from "./Functions/keyboard-events.js";
-import lottery from "./Functions/lottery.js";
-import networkStatus from "./Functions/network-status.js";
-import responsiveTester from "./Functions/responsive-tester.js";
-import scrollTopButtton from "./Functions/scroll-button.js";
-import searchFilter from "./Functions/search-filter.js";
-import slider from "./Functions/slider.js";
-import webcam from "./Functions/webcam.js";
+import { alarm, digitalClock } from "./Modules/clock-alarm.js";
+import countdown from "./Modules/countdown.js";
+import darkTheme from "./Modules/dark-theme.js";
+import userDeviceInfo from "./Modules/device-detection.js";
+import getGeolocation from "./Modules/geolocation.js";
+import hamburgerMenu from "./Modules/hamburger-menu.js";
+import { moveBall, shortcuts } from "./Modules/keyboard-events.js";
+import lottery from "./Modules/lottery.js";
+import networkStatus from "./Modules/network-status.js";
+import responsiveTester from "./Modules/responsive-tester.js";
+import scrollTopButtton from "./Modules/scroll-button.js";
+import searchFilter from "./Modules/search-filter.js";
+import slider from "./Modules/slider.js";
+import webcam from "./Modules/webcam.js";
+import scrollSpy from "./Modules/scroll-spy.js";
 
 const d = document;
 
@@ -28,6 +29,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   searchFilter(".card-filter", ".card");
   lottery("#winner-btn", ".player");
   slider();
+  scrollSpy();
 });
 
 // keyboard events

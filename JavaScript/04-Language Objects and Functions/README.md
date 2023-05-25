@@ -1,4 +1,4 @@
-# Language Objects and Functions
+# Language Objects and Modules
 
 ## Object console
 
