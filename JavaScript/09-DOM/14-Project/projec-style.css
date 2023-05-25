@@ -258,12 +258,14 @@ img {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  border: thin solid #000;
+  /* border: thin solid #000; */
   text-decoration: none;
-  background-color: #fff;
+  background-color: transparent;
   color: #000;
+  text-shadow: 1px 1px 5px #fff;
   transition: all 0.3s ease;
 }
 .slider a:hover {
-  color: #4d4d4d;
+  color: #ccc;
+  text-shadow: 1px 1px 5px #777;
 }
