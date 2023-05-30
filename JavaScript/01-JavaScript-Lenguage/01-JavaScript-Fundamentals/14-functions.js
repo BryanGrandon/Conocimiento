@@ -1,37 +1,50 @@
 "use strict";
-let userName = "Bryan"; // External variable
-
 // Function statement
+let userName = "Bryan"; // External variable
 function variable() {
   let userName = "Andres"; // Local variable
-  let message = `Hello, ${userName}`;
-  console.log(message);
+  console.log(userName);
 }
 variable();
-console.log(userName); // Bryan
-// console.log(message) // message is not defined
 
-// Parameters
-function parameters(name, age) {
-  age >= 18 && age < 120
-    ? console.log(`${name} is of legal age`)
-    : console.log(`${name} is not of legal age`);
+// Parameters // Predetermined values // Returning a value
+function checkAge(name = "Anonymous", age = 18) {
+  return age >= 18 && age < 120
+    ? `${name} is of legal age`
+    : `${name} is not of legal age`;
 }
-parameters("Bryan", 21); // Bryan is of legal age
+const userAge = {
+  user1: checkAge(),
+  user2: checkAge("Bryan", 21),
+};
+// Copy a functin to another variable
+const checkLegalAge = checkAge;
+let user3 = checkLegalAge("Andres");
 
-// Predetermined values
-function greet(name = "Anonymous") {
+// Function expressions
+const anonymousFunction = function (coffee = true) {
+  if (coffee) console.log("wants a coffee");
+  else console.log("doesn't want a coffee");
+};
+anonymousFunction();
+
+// Callback functions
+function modify(name, callback) {
+  let nameUpper = name.toUpperCase();
+  callback(nameUpper);
+}
+modify("Andres", (name) => console.log(`Hello, ${name}`));
+
+function callbackModify(name) {
   console.log(`Hello, ${name}`);
 }
-greet(); // Hello Anonymuos
-greet("Andres"); // Hello Andres
+modify("bryan", callbackModify);
 
-// Returning a value
-function addition(number1, number2) {
-  return number1 + number2;
-}
-let result = addition(2, 4);
-console.log(result); // 6
+// Arrow Function
+const arrowFunction = () => {
+  console.log("Arrow Function");
+};
+arrowFunction();
 
 // Function Naming
 const functionNaming = {
