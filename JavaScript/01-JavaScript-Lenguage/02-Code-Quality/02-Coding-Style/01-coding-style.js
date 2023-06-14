@@ -2,7 +2,6 @@
 // Our code should be as clean and easy to read as possible.
 
 // Keys
-
 // For a very short code, one line is allowed.
 if (n < 0) console.log("option 1");
 
@@ -12,7 +11,6 @@ if (n < 0) {
 }
 
 // Line size
-
 let str = `
   ECMA International's TC39 is a group of JavaScript developers,
   implementers, academics, and more, collaborating with the community
@@ -20,7 +18,6 @@ let str = `
 `;
 
 // Indentation
-
 // Horizontal indentation: 2 or 4 spaces.
 // Vertical indentation: empty lines to divide code into logical blocks.
 function checkAge(age) {
@@ -33,7 +30,6 @@ function checkAge(age) {
 }
 
 // There are three ways to organize the functions
-
 // Option 1
 function createElement() {}
 // --- All functions
@@ -46,6 +42,5 @@ function greet() {}
 
 // Option 3
 // Mixed: a function is declared where it is used for the first time.
-
 // ---------------
 // Use extension (prettier - Code formatter)
