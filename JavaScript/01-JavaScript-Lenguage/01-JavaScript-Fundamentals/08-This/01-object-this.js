@@ -1,5 +1,4 @@
 "use strict";
-
 /* ( this ) in JavaScript is a keyword that refers to the object 
   form which a function is called and is context sensitive */
 

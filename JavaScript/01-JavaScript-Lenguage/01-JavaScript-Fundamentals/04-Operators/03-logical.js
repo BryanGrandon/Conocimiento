@@ -1,5 +1,4 @@
 "use strict";
-
 // || ( or )
 const or = (value1, value2) => {
   let result = value1 || value2;

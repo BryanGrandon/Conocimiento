@@ -1,5 +1,4 @@
 "use strict";
-
 // The typical use of ( ?? ) is to provide a default value
 let userName;
 let user = userName ?? "anonymous";
