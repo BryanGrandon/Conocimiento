@@ -1,6 +1,6 @@
 "use strict";
-let user1 = new Object(); // object constructor
-let user2 = {}; // object literal
+let user_1 = new Object(); // object constructor
+let user_2 = {}; // object literal
 
 // Literals and properties
 let age = 21;

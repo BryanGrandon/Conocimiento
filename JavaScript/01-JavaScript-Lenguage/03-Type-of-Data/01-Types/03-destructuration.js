@@ -1,5 +1,4 @@
 "use strict";
-
 // Array
 const array = ["element 1", "element 2"];
 let [element_1, element_2] = array;

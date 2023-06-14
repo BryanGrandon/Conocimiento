@@ -1,5 +1,11 @@
+"use strict";
+// Boolean: logical type
 let isTrue = true;
 let isFalse = false;
+
+// Boolean values are also the result of comparisons
+let isGreater = 4 > 1;
+console.log(isGreater); // true
 
 const valuesTendingToTrue = {
   boolean: true,
@@ -9,7 +15,6 @@ const valuesTendingToTrue = {
   number: 0.1,
   infinite: Infinity,
 };
-
 const valuesTendingToFalse = {
   boolean: false,
   null: null,

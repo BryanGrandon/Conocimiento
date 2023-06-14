@@ -1,9 +1,8 @@
 "use strict";
-
-let id1 = Symbol("id");
-let id2 = Symbol("id");
-console.log(id1 == id2); // false
-console.log(id1.description); // id
+let id_1 = Symbol("id");
+let id_2 = Symbol("id");
+console.log(id_1 == id_2); // false
+console.log(id_1.description); // id
 
 // "Hidden" keys
 const user = {

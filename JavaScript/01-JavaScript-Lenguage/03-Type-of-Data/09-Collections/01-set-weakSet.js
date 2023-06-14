@@ -1,13 +1,18 @@
 "use strict";
-// WeakMap: keys must be objects
-const weakMap = new WeakMap();
+const set = new Set();
 
-let bryan = { name: "Bryan" };
-weakMap.set(bryan, "...");
+for (let i = 1; i <= 3; i++) {
+  set.add(i); // 1, 2, 3
+  set.add(i); // 1, 2, 3
+}
+console.log(set.has(1)); // true
+set.delete(1);
 
-console.log(weakMap.get(bryan)); // ...
-weakMap.delete(bryan);
-console.log(weakMap.has(bryan)); // false
+const sizeOfTheSet = set.size;
+set.clear();
+
+const array = [1, 2, 3, 1, 2, 3];
+console.log([...new Set(array)]); // [1, 2, 3]
 
 // WeakSet: keys must be objects
 const weakSet = new WeakSet();
@@ -22,3 +27,5 @@ weakSet.add(obj_2);
 
 console.log(weakSet.has(obj_1)); // true
 console.log(weakSet.has(obj_3)); // false
+
+console.log(weakSet);
