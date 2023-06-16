@@ -1,5 +1,4 @@
 "use strict";
-
 let company = {
   sales: [
     { name: "John", salary: 1000 },
