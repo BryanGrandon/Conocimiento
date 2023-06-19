@@ -25,6 +25,7 @@ console.log(longEar.eats);
 
 // Loop for...in
 console.log(Object.keys(rabbit));
+
 for (let prop in rabbit) {
   console.log(prop);
 
