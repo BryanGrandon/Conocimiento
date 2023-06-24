@@ -1,7 +1,0 @@
-{
-  "textString": "Bryan",
-  "number": "21",
-  "boolean": "true",
-  "array": ["correr", "programar", "21"],
-  "objet": { "name": "Bryan", "age": "21" }
-}
