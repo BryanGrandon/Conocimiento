@@ -1,17 +1,38 @@
 "use strict";
+/**
+ * get () {}
+ *   Getter, the code executed to get obj.propName
+ *
+ * set (value) {}
+ *   Setter, the code executed to set obj.propName = value
+ */
 
-const obj = {
-  get propName() {},
-  // Getter, the code executed to get obj.propName
-  set propName(value) {},
-  // Setter, the code executed to set obj.propName= value
-};
+// Class
 
-//  Example
+class User {
+  constructor(name) {
+    this.name = name;
+  }
+  get name() {
+    return this._name;
+  }
+  set name(value) {
+    if (value.length < 4) {
+      console.log("The name is short");
+      return;
+    }
+    this._name = value;
+  }
+}
+let user = new User("Bryan");
+console.log(user.name);
+console.log(user);
 
-const user = {
-  name: "John",
-  lastName: "Smith",
+// Object
+
+const userObj = {
+  name: "Bryan",
+  lastName: "Grandon",
 
   get fullName() {
     return `${this.name} ${this.lastName}`;
@@ -21,21 +42,18 @@ const user = {
     [this.name, this.lastName] = value.split(" ");
   },
 };
+console.log(userObj.fullName);
+userObj.fullName = "Andres Correa";
+console.log(userObj.name, userObj.lastName);
 
-console.log(user);
-console.log(user.fullName);
-user.fullName = "Alice Cooper";
-console.log(user.fullName);
-console.log(user);
+// DefineProperty
 
-// Descriptors
-
-const user_2 = {
-  name: "John",
-  lastName: "Smith",
+const userObj2 = {
+  name: "Bryan",
+  lastName: "Grandon",
 };
 
-Object.defineProperty(user_2, "fullName", {
+Object.defineProperty(userObj2, "fullName", {
   get() {
     return `${this.name} ${this.lastName}`;
   },
@@ -44,26 +62,6 @@ Object.defineProperty(user_2, "fullName", {
   },
 });
 
-console.log(user_2.fullName);
-user_2.fullName = "Alice Cooper";
-console.log(user_2.fullName);
-
-// Smarter getters and setters
-
-const user_3 = {
-  get name() {
-    return this._name;
-  },
-  set name(value) {
-    if (value.length < 4) {
-      console.log("4 characters minimum");
-      return;
-    }
-    this._name = value;
-  },
-};
-
-user_3.name = "Pedro";
-console.log(user_3.name);
-
-user_3.name = "";
+console.log(userObj2.fullName);
+userObj2.fullName = "Alice Cooper";
+console.log(userObj2.name, userObj2.lastName);
