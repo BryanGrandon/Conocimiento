@@ -1,43 +1,61 @@
 "use strict";
 
-function* iterable() {
-  yield "Hola";
-  yield "Mundo";
-  yield 21;
+function* generateSequence() {
+  yield 1;
+  yield 2;
+  return 3;
 }
 
-let iterador = iterable();
+let generator = generateSequence();
+console.log(generator);
 
-for (y of iterador) {
-  console.log(y);
+// next()
+
+let one = generator.next();
+console.log(JSON.stringify(one));
+
+let two = generator.next();
+console.log(JSON.stringify(two));
+
+let three = generator.next();
+console.log(JSON.stringify(three));
+
+// Generators are iterable
+
+function* generateSequence_2() {
+  yield 1;
+  yield 2;
+  yield 3;
 }
 
-// (yield) pass it to an array
+let generator_2 = generateSequence_2();
 
-const arr = [...iterable()];
-console.log(arr);
-
-// Example
-
-function elevation(valor) {
-  setTimeout(() => {
-    return console.log({ valor, result: valor * valor });
-  }, Math.random() * 1000);
+for (let value of generator_2) {
+  console.log(value);
 }
 
-function* generator() {
-  console.log("Start Generator");
-  yield elevation(0);
-  yield elevation(1);
-  yield elevation(2);
-  yield elevation(3);
-  yield elevation(4);
-  yield elevation(5);
-  console.log("Finish Generator");
+let sequence = [0, ...generateSequence_2()];
+console.log(sequence);
+
+// Generator composition
+
+function* generateSequence_3(start, end) {
+  for (let i = start; i <= end; i++) yield i;
 }
 
-let gen = generator();
+let example = generateSequence_3(0, 3);
+console.log(...example);
 
-for (let y of gen) {
-  console.log(y);
+// generator return
+
+function* gen() {
+  yield 1;
+  yield 2;
+  yield 3;
 }
+
+const g = gen();
+
+console.log(g.next());
+console.log(g.return("foo"));
+console.log(g.next());
