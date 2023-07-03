@@ -1,3 +1,4 @@
+"use strict";
 const d = document;
 
 window.addEventListener("resize", (e) => {
@@ -37,7 +38,6 @@ const properties = {
     y: window.screenY,
   },
 };
-
 console.log(properties);
 
 // Methods

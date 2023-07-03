@@ -1,3 +1,4 @@
+"use strict";
 function eventDelegation(e) {
   alert(`The origin of the click is ${e.target.className}`);
 }

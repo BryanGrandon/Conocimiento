@@ -1,9 +1,0 @@
-:root {
-  --text-color: #fff;
-  --background-color: blue;
-}
-
-.styles {
-  color: var(--text-color);
-  font-weight: bold;
-}

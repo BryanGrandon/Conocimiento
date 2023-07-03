@@ -1,3 +1,4 @@
+"use strict";
 const $cards = document.querySelector(".cards"),
   $template = document.getElementById("template-card").content,
   $fragment = document.createDocumentFragment(),
@@ -32,5 +33,4 @@ cardsContent.forEach((e) => {
   let $clone = document.importNode($template, true);
   $fragment.appendChild($clone);
 });
-
 $cards.appendChild($fragment);

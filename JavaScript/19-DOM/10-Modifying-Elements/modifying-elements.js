@@ -1,17 +1,15 @@
-/* 
-.insertAdjacent...
-    .insertAdjacentElement(position, element)
-    .insertAdjacentHTML(position, html)
-    .insertAdjacentText(position, text)
-
-position:
-    beforebegin (previous brother)
-    afterend (netx brother)
-
-    afterbegin (first son)
-    beforeend (last son)
-*/
-
+"use strict";
+/** .insertAdjacent:
+ *  - .insertAdjacentElement(position, element)
+ *  - .insertAdjacentHTML(position, html)
+ *  - .insertAdjacentText(position, text)
+ *
+ *  Position
+ *  - beforebegin (previous brother)
+ *  - afterend (next brother)
+ *  - afterbegin (first son)
+ *  - beforeend (last son)
+ */
 const $cards = document.querySelector(".cards"),
   $newCard = document.createElement("figure");
 
@@ -33,19 +31,19 @@ $newCard.classList.add("example");
 // first son
 setTimeout(() => {
   $cards.prepend($newCard);
-}, 1000);
+}, 2000);
 
 // last son
 setTimeout(() => {
   $cards.append($newCard);
-}, 3000);
+}, 4000);
 
 // previus brother
 setTimeout(() => {
   $cards.before($newCard);
-}, 5000);
+}, 6000);
 
 // next brother
 setTimeout(() => {
   $cards.after($newCard);
-}, 7000);
+}, 8000);

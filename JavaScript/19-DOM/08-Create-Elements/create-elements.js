@@ -1,6 +1,11 @@
+"use strict";
 const $cards = document.querySelector(".cards");
 
-// Form 1
+/** Form 1
+ * - Create and designate each required element.
+ * - Set the desired attributes for each element.
+ * - Set each created element as a child.
+ */
 
 const $figure = document.createElement("figure"),
   $img = document.createElement("img"),
@@ -19,7 +24,9 @@ $figure.appendChild($img);
 $figure.appendChild($figcaption);
 $cards.appendChild($figure);
 
-// Form 2
+/** Form 2
+ *  - Establecer directamente el html y establecerlo directamentes
+ */
 
 const $figure2 = document.createElement("figure");
 
@@ -33,7 +40,7 @@ $cards.appendChild($figure2);
 
 // For Multiple elements ----------------
 
-// Form 1 -> = e
+// Seasons => forEach
 const $container = document.querySelector(".container");
 
 const seasons = ["Spring", "Summer", "Autumn", "Winter"],
@@ -52,8 +59,7 @@ seasons.forEach((e) => {
   $ul.appendChild($li);
 });
 
-// Form 2 -> += ``
-
+// Continents => += ` `
 const continents = [
     "North America",
     "South America",
@@ -76,8 +82,7 @@ continents.forEach((e) => {
   $ul2.innerHTML += `<li>${e}</li>`;
 });
 
-// Forma 3 -> Fragment */
-
+// Mounth => fragment
 const months = [
     "January",
     "February",

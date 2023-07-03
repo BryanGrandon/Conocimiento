@@ -1,15 +1,19 @@
+"use strict";
 const d = document;
-function aFunction() {
-  alert("Is a funcition");
-}
 
-// Event with attribute -----
-/* using onclick="function()" */
+/** Event with atribute
+ *  - using onclick="function()" in html.
+ */
+
 function forAttributeEvent() {
   alert("Event with Attribute");
 }
 
-// Event with semantic handler -----
+// Event with semantic handler
+
+function aFunction() {
+  alert("Is a funcition");
+}
 const $semanticEvent = d.getElementById("semantic-event");
 $semanticEvent.onclick = aFunction;
 $semanticEvent.onclick = (e) => {
@@ -17,6 +21,7 @@ $semanticEvent.onclick = (e) => {
 };
 
 // Multiple Events -----
+
 const $multipleEvents = d.getElementById("multiple-events");
 $multipleEvents.addEventListener("click", aFunction);
 $multipleEvents.addEventListener("click", (e) => {
@@ -30,18 +35,18 @@ $multipleEvents.addEventListener("click", (e) => {
 });
 
 // Event with paramethers
+
 function greet(name = "anonymous") {
   alert(`Hello ${name}`);
 }
-
 $multipleEvents.addEventListener("click", () => {
   greet();
   greet("Bryan");
 });
 
-// Remove Event -----
-const $removeEvent = d.getElementById("remove-event");
+// Remove Event
 
+const $removeEvent = d.getElementById("remove-event");
 const removeTheEvent = (e) => {
   alert(`Remove type event ${e.type}`);
   $removeEvent.removeEventListener("dblclick", removeTheEvent);
