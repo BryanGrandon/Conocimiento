@@ -1,8 +1,5 @@
 "use strict";
-/** Execution Contest in JavaScript
- *  Lexical environment
- *      Creates a space in memory for each variable created with var, in addition to functions and imports
- */
+// Lexical environment
 
 // Function
 
@@ -20,9 +17,7 @@ import {} from "module";
 console.log(varKeyword);
 var varKeyword = "I am var";
 
-/** Temporal Dead Zones
- *      Cannot access "variable" before initialization
- */
+// Temporal Dead Zones
 
 let myAge = getAge();
 const age = 21;
