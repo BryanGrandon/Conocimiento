@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  background: url("https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_1280.jpg");
+  background-size: cover;
+  padding: 100px 50px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+article {
+  font-family: "Courier New";
+  color: #eee;
+  padding: 20px 40px;
+  width: 630px;
+  margin: auto;
+
+  /* glass */
+  background: rgba(255, 255, 255, 0.181);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.4px);
+  -webkit-backdrop-filter: blur(7.4px);
+  border: 1px solid rgba(255, 255, 255, 0.726);
+}
+
+.countdown i,
+.countdown h3 {
+  color: greenyellow;
+}
+.countdown p {
+  font-size: larger;
+}
+
+:root {
+  --color_Login: #ff0000;
+}
+
+.options {
+  display: flex;
+  text-align: center;
+  border-radius: 10px;
+  gap: 15px;
+}
+
+.options input::placeholder {
+  color: #ccc;
+}
+
+.options input {
+  outline: none;
+  border: none;
+  background: none;
+  color: #eee;
+  border-bottom: 1px solid var(--color_Login);
+  padding: 0 5px;
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.buttons button {
+  border: none;
+  border-radius: 6px;
+  background: var(--color_Login);
+  color: #fff;
+  padding: 5px 10px;
+}
+.buttons button:hover {
+  background: var(--color_Login);
+  opacity: 0.6;
+}

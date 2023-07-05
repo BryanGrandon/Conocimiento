@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="modules.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <article>
+        <section class="options">
+          <input type="datetime-local" name="date" id="date" />
+          <input type="text" id="message" placeholder="Final Message..." />
+          <section class="buttons">
+            <button id="submit">Submit</button>
+            <button id="reset">Reset</button>
+          </section>
+        </section>
+      </article>
+      <article class="countdown"></article>
+    </main>
+  </body>
+</html>

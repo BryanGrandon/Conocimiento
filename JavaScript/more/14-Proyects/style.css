@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+:root {
+  --main-font: sans-serif;
+  --font-size: 16px;
+  --container-width: 1200px;
+}
+html {
+  box-sizing: border-box;
+  font-family: var(--main-font);
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+img {
+  max-width: var(--container-width);
+  height: auto;
+}
+
+/* Header */
+#header {
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  background-color: var(--main-color);
+  color: var(--second-color);
+  z-index: 997;
+}
+#header h1 {
+  margin: 0 auto;
+  text-align: center;
+}
