@@ -15,8 +15,6 @@ const nameConst = "const";
 const CREATOR_NAME = "Bryan Grandon";
 ```
 
----
-
 ## [Hoisting](/JavaScript/All-About-Variables/hoisting.js)
 
 ### Lexical environment
@@ -26,8 +24,6 @@ const CREATOR_NAME = "Bryan Grandon";
 ### Temporal Dead Zone
 
 - Cannot access "variables" before initialization.
-
----
 
 ## [Variable Naming Rules](/JavaScript/All-About-Variables/naming-rules.js)
 
@@ -43,9 +39,10 @@ const CREATOR_NAME = "Bryan Grandon";
 Using SNAKE_CASE notation.
 
 - We know its value before executing the program
-- ```javascript
-  const READ_ONLY = 21;
-  ```
+
+```js
+const READ_ONLY = 21;
+```
 
 ### Common Variables
 
@@ -53,10 +50,11 @@ Using camelCase notation
 
 - Boolean: **is**, **has**
 - other data type: Nouns with adjective
-- ```javascript
-  let fullName = "Bryan Grandon";
-  const hasEighteen = true;
-  ```
+
+```js
+let fullName = "Bryan Grandon";
+const hasEighteen = true;
+```
 
 ### Methods and Functions
 
@@ -65,7 +63,7 @@ Using camelCase notation
 - Infinitive verbs
 - What action does the function perfom?
 
-```javascript
+```js
 function createProduct() {}
 ```
 
@@ -75,7 +73,7 @@ Using PascalCase notation
 
 - Usually nouns and adjectives.
 
-```javascript
+```js
 class Users {}
 ```
 
@@ -88,11 +86,9 @@ class Users {}
 
 - Use at startup ( $ )
 
-```javascript
+```js
 const $section = document.createElement("section");
 ```
-
----
 
 ## [Variable Scopes](/JavaScript/All-About-Variables/scopes.js)
 
